@@ -210,6 +210,12 @@ h3.sub{font-size:18px;font-weight:600;margin-bottom:6px}
 .avatar{width:104px;height:104px;border-radius:50%;object-fit:cover;border:2px solid var(--line);flex:none}
 .avatar.lg{width:120px;height:120px}
 .contact-note{margin:0;color:var(--muted)}
+.routes{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.route{display:grid;gap:8px;padding:20px;border:1px solid var(--line);border-radius:10px;background:var(--bg);min-width:0}
+@media (max-width:760px){.routes{grid-template-columns:1fr}}
+.home-routes{display:grid;gap:10px}
+.home-routes > div{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.home-routes .label{min-width:13ch}
 footer{padding-block:0 40px;font-family:var(--mono);font-size:12.5px;color:var(--muted)}
 @media (prefers-reduced-motion:no-preference){
   .chip,.btn{transition:background .15s,color .15s}
@@ -287,9 +293,9 @@ footer{padding-block:0 40px;font-family:var(--mono);font-size:12.5px;color:var(-
 
   <div class="home-contact">
     <h2>Let's talk</h2>
-    <div class="row">
-      <span class="addr">santosh.dhanjal@gmail.com</span>
-      <a class="btn ghost" href="https://www.linkedin.com/in/santosh-dhanjal" target="_blank" rel="noopener">LinkedIn</a>
+    <div class="home-routes">
+      <div><span class="label">Contract</span><span class="addr">iproductconsulting@gmail.com</span></div>
+      <div><span class="label">Fixed-term &amp; permanent</span><span class="addr">santosh.dhanjal@gmail.com</span></div>
     </div>
   </div>
   </div>
@@ -1033,10 +1039,25 @@ footer{padding-block:0 40px;font-family:var(--mono);font-size:12.5px;color:var(-
 
   <section class="contact panel" id="contact" data-panel="contact" aria-labelledby="contact-h">
     <h2 id="contact-h">Let's talk</h2>
-    <p class="contact-note">Available for contract work through iProduct Consulting Limited, and for permanent roles.</p>
+    <div class="routes">
+      <div class="route">
+        <span class="label">Contract work</span>
+        <p class="contact-note">Through iProduct Consulting Limited</p>
+        <div class="row">
+          <span class="addr" id="email-contract">iproductconsulting@gmail.com</span>
+          <button class="btn primary copy" type="button" data-target="email-contract">Copy email</button>
+        </div>
+      </div>
+      <div class="route">
+        <span class="label">Fixed-term and permanent roles</span>
+        <p class="contact-note">Directly with me</p>
+        <div class="row">
+          <span class="addr" id="email-perm">santosh.dhanjal@gmail.com</span>
+          <button class="btn primary copy" type="button" data-target="email-perm">Copy email</button>
+        </div>
+      </div>
+    </div>
     <div class="row">
-      <span class="addr" id="email">santosh.dhanjal@gmail.com</span>
-      <button class="btn primary" id="copy" type="button">Copy email</button>
       <a class="btn ghost" href="https://www.linkedin.com/in/santosh-dhanjal" target="_blank" rel="noopener">LinkedIn</a>
     </div>
     <span class="note" id="copy-note" aria-live="polite"></span>
@@ -1084,17 +1105,19 @@ footer{padding-block:0 40px;font-family:var(--mono);font-size:12.5px;color:var(-
       });
     });
   });
-  var btn=document.getElementById('copy'),note=document.getElementById('copy-note'),em=document.getElementById('email');
-  btn.addEventListener('click',function(){
-    var t=em.textContent.trim();
-    function fallback(){
-      var r=document.createRange();r.selectNodeContents(em);
-      var s=window.getSelection();s.removeAllRanges();s.addRange(r);
-      note.textContent='Email selected. Press Ctrl+C or ⌘C to copy.';
-    }
-    if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(t).then(function(){note.textContent='Email copied.'},fallback);
-    }else{fallback()}
+  var note=document.getElementById('copy-note');
+  document.querySelectorAll('.copy').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var em=document.getElementById(btn.getAttribute('data-target')); var t=em.textContent.trim();
+      function fallback(){
+        var r=document.createRange();r.selectNodeContents(em);
+        var s=window.getSelection();s.removeAllRanges();s.addRange(r);
+        note.textContent='Email selected. Press Ctrl+C or ⌘C to copy.';
+      }
+      if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(t).then(function(){note.textContent='Copied '+t+'.'},fallback);
+      }else{fallback()}
+    });
   });
 })();
 </script>
