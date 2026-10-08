@@ -1,0 +1,1086 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Santosh Dhanjal, Senior Product Leader for digital transformation, platforms and apps. Case studies, experience, mentoring and contact.">
+<meta property="og:title" content="Santosh Dhanjal, Senior Product Leader">
+<meta property="og:description" content="10+ years turning complex business problems into scalable digital products.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://santoshdhanjal-star.github.io/">
+<meta property="og:image" content="https://santoshdhanjal-star.github.io/shots/santosh.jpg">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Santosh Dhanjal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: single reading column with a wide "release log" band for work; metrics set like a product changelog */
+:root{
+  --bg:#0b0c10;
+  --surface:#15171e;
+  --ink:#eceef4;
+  --muted:#9ba1b4;
+  --line:#2a2d38;
+  --accent:#8c9dff;
+  --accent-soft:#1f2547;
+  --display:"Familjen Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --body:"Literata", Georgia, "Times New Roman", serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;padding-inline:20px;padding-block:0}
+.wrap{max-width:1080px;margin-inline:auto}
+.read{max-width:68ch}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.1;margin:0}
+.label{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+/* nav */
+nav.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);margin-inline:-20px;padding:12px 20px}
+nav.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+nav.top .name{font-family:var(--display);font-weight:700;font-size:17px;color:var(--ink);text-decoration:none}
+nav.top ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav.top ul a{font-family:var(--display);font-size:15px;color:var(--muted);text-decoration:none}
+nav.top ul a:hover{color:var(--ink)}
+nav.top ul a[aria-current="page"]{color:var(--ink);text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:8px}
+section.panel{padding-block:56px 0}
+.contact.panel{margin-block:56px 64px}
+
+/* hero */
+.hero{padding-block:72px 48px;display:grid;gap:28px}
+.hero .status{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:13px;color:var(--accent)}
+.hero .status::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.hero h1{font-size:clamp(40px,7vw,76px);font-weight:700;letter-spacing:-.02em;max-width:16ch}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p.lede{font-size:20px;color:var(--muted);max-width:60ch;margin:0}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.btn{font-family:var(--display);font-weight:600;font-size:16px;padding:12px 20px;border-radius:999px;text-decoration:none;border:1.5px solid var(--accent);cursor:pointer}
+.btn.primary{background:var(--accent);color:var(--bg)}
+.btn.ghost{background:transparent;color:var(--accent)}
+
+/* key numbers */
+.numbers{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--ink);border-bottom:1px solid var(--line)}
+.numbers div{padding:20px 18px 22px 0;display:grid;gap:6px;align-content:start}
+.numbers div + div{padding-left:18px;border-left:1px solid var(--line)}
+.numbers strong{font-family:var(--display);font-size:clamp(30px,4vw,44px);font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1}
+.numbers span{font-size:15px;color:var(--muted);line-height:1.4}
+@media (max-width:760px){
+  .numbers{grid-template-columns:1fr 1fr}
+  .numbers div:nth-child(3){padding-left:0;border-left:0}
+  .numbers div:nth-child(n+3){border-top:1px solid var(--line)}
+}
+
+/* awards */
+.awards{display:flex;flex-wrap:wrap;gap:8px 10px;padding-block:22px 0}
+.awards .label{width:100%}
+.award,.chip,.skills li{font-family:var(--display);font-size:14px;line-height:1.4;padding:6px 13px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink)}
+.award b{color:var(--accent);font-weight:600}
+
+section{padding-block:72px 0}
+.sec-head{display:grid;gap:10px;margin-bottom:28px}
+.sec-head h2{font-size:clamp(30px,4.4vw,44px);letter-spacing:-.015em}
+.sec-head p{margin:0;color:var(--muted);max-width:62ch}
+
+/* filters */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.chip{cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+
+/* case studies */
+.cases{display:grid;gap:14px}
+.case{scroll-margin-top:84px;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.case summary{list-style:none;cursor:pointer;padding:22px 24px;display:grid;grid-template-columns:1fr auto;gap:6px 20px;align-items:start}
+.case summary::-webkit-details-marker{display:none}
+.case .meta{grid-column:1/-1;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.tag{font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:4px;background:var(--accent-soft);color:var(--accent)}
+.tag.st{background:transparent;border:1px solid var(--line);color:var(--muted)}
+.tag.st.done{border-color:var(--accent);color:var(--accent)}
+.case h3{font-size:24px;font-weight:600}
+.case .hook{grid-column:1;margin:0;color:var(--muted);font-size:16px;min-width:0}
+.case .toggle{grid-column:2;grid-row:2/4;font-family:var(--mono);font-size:13px;color:var(--accent);white-space:nowrap;align-self:center}
+.case[open] .toggle .o{display:none}
+.case:not([open]) .toggle .c{display:none}
+.case .headline{grid-column:1/-1;display:flex;gap:8px 22px;flex-wrap:wrap;margin-top:8px}
+.case .headline span{font-family:var(--mono);font-size:14px;font-variant-numeric:tabular-nums}
+.case .headline b{color:var(--accent);font-weight:500}
+.case .body{padding:0 24px 26px;display:grid;grid-template-columns:1fr 1fr;gap:28px;border-top:1px solid var(--line);padding-top:22px}
+.case .body > div{min-width:0}
+.case .body h4{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 8px;font-weight:500}
+.case .body ul{margin:0 0 18px;padding-left:18px;font-size:16px}
+.case .body li{margin-bottom:6px}
+.case .body p{margin:0 0 18px;font-size:16px}
+.shots{grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:0 0 6px}
+.shots.two{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.shots figure{margin:0;display:grid;gap:8px;align-content:start;min-width:0}
+.shots .frame{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff}
+.shots img{display:block;width:100%;height:auto;max-width:100%}
+.shots figcaption{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.outcomes{list-style:none;padding:0!important}
+.outcomes li{display:grid;grid-template-columns:7.5ch 1fr;gap:12px;padding:8px 0;border-bottom:1px dashed var(--line);margin:0!important}
+.outcomes li:last-child{border-bottom:0}
+.outcomes .v{font-family:var(--mono);font-weight:500;color:var(--accent);font-variant-numeric:tabular-nums}
+@media (max-width:760px){
+  .case .body{grid-template-columns:1fr;gap:4px}
+  .case summary{grid-template-columns:1fr}
+  .case .toggle{grid-column:1;grid-row:auto}
+}
+.earlier{margin-top:26px;padding:20px 24px;border:1px dashed var(--line);border-radius:10px}
+.earlier ul{list-style:none;padding:0;margin:10px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 24px}
+.earlier li{display:grid;grid-template-columns:5ch 1fr;gap:10px;font-size:16px}
+.earlier li > span:first-child{font-family:var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.earlier li > a,.earlier li .plain{min-width:0}
+
+/* experience */
+.roles{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.role{display:grid;grid-template-columns:15ch 1fr;gap:24px;padding-block:24px;border-bottom:1px solid var(--line)}
+.role .when{font-family:var(--mono);font-size:13.5px;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:5px}
+.role > div{min-width:0}
+.role h3{font-size:22px;font-weight:600}
+.role .org{font-family:var(--display);color:var(--accent);font-size:17px;margin:2px 0 10px}
+.role ul{margin:0;padding-left:18px;font-size:16px}
+.role li{margin-bottom:6px}
+@media (max-width:640px){.role{grid-template-columns:1fr;gap:6px}}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:32px 40px}
+.skills > div{min-width:0}
+.skills h3{font-size:18px;font-weight:600;margin-bottom:10px}
+.skills ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+
+@media (max-width:760px){.skills{grid-template-columns:1fr}}
+
+/* about */
+.about{display:block}
+.about > div{min-width:0}
+.about p{margin:0 0 16px}
+.pull{font-family:var(--display);font-size:clamp(22px,2.6vw,28px);font-weight:600;line-height:1.3;border-left:3px solid var(--accent);padding-left:18px;margin:0 0 28px}
+h3.sub{font-size:18px;font-weight:600;margin-bottom:6px}
+.edu-wrap{margin-top:64px}
+.edu{list-style:none;margin:0;padding:0}
+.edu li{display:grid;grid-template-columns:1fr auto;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.edu li span{font-family:var(--mono);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+@media (max-width:760px){.about{grid-template-columns:1fr;gap:24px}}
+
+/* contact */
+.contact{margin-block:80px 64px;padding:40px;border-radius:10px;background:var(--surface);border:1px solid var(--line);display:grid;gap:20px}
+.contact h2{font-size:clamp(28px,4vw,42px)}
+.contact p{margin:0;max-width:56ch;color:var(--muted)}
+.contact .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.contact .addr{font-family:var(--mono);font-size:16px;padding:10px 14px;border-radius:8px;border:1px solid var(--line);background:var(--bg);user-select:all;word-break:break-all}
+.contact .note{font-family:var(--mono);font-size:13px;min-height:1.2em;color:var(--muted)}
+@media (max-width:520px){.contact{padding:26px 20px}}
+
+.featured{padding-block:56px 0;display:grid;gap:16px}
+.feat-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.feat-head .more{font-family:var(--display);font-size:15px;text-decoration:none}
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.feat{display:grid;gap:10px;align-content:start;padding:20px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);text-decoration:none;min-width:0}
+.feat:hover{border-color:var(--accent)}
+.feat .tag{justify-self:start}
+.feat strong{font-family:var(--display);font-size:19px;font-weight:600;line-height:1.25}
+.feat-metric{font-family:var(--mono);font-size:13.5px;color:var(--muted)}
+.feat-metric b{color:var(--accent);font-weight:500}
+@media (max-width:760px){.feat-grid{grid-template-columns:1fr}}
+.home-contact{margin-block:56px 24px;padding-top:28px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.home-contact h2{font-size:clamp(26px,3.4vw,34px)}
+.home-contact .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.home-contact .addr{font-family:var(--mono);font-size:15px;padding:10px 14px;border-radius:8px;border:1px solid var(--line);background:var(--surface);user-select:all;word-break:break-all}
+.mentor-intro{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:start}
+.mentor-intro > div{min-width:0}
+.mentor-intro .read p{margin:0 0 16px}
+.mentor-facts{display:grid;gap:16px;padding:22px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.mentor-facts > div{display:grid;gap:4px}
+.mentor-facts .row{display:flex;gap:10px;flex-wrap:wrap;padding-top:4px}
+.mhead{margin-top:44px;margin-bottom:16px}
+.mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.mgroup{padding:20px;border:1px solid var(--line);border-radius:10px;background:var(--surface);min-width:0}
+.mgroup h3{font-size:18px;font-weight:600;margin-bottom:10px}
+.mgroup ul{margin:0;padding-left:18px;font-size:15.5px}
+.mgroup li{margin-bottom:6px}
+@media (max-width:860px){.mgrid{grid-template-columns:1fr 1fr}.mentor-intro{grid-template-columns:1fr;gap:20px}}
+@media (max-width:560px){.mgrid{grid-template-columns:1fr}}
+.hero-top{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.avatar{width:104px;height:104px;border-radius:50%;object-fit:cover;border:2px solid var(--line);flex:none}
+.avatar.lg{width:120px;height:120px}
+footer{padding-block:0 40px;font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){
+  .chip,.btn{transition:background .15s,color .15s}
+}
+</style>
+</head>
+<body>
+
+
+<nav class="top" aria-label="Sections">
+  <div class="wrap">
+    <a class="name" href="#home" data-tab="home">Santosh Dhanjal</a>
+    <ul>
+      <li><a href="#work" data-tab="work">Case studies</a></li>
+      <li><a href="#experience" data-tab="experience">Experience</a></li>
+      <li><a href="#skills" data-tab="skills">Skills &amp; education</a></li>
+      <li><a href="#mentoring" data-tab="mentoring">Mentoring</a></li>
+      <li><a href="#about" data-tab="about">About</a></li>
+      <li><a href="#contact" data-tab="contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap" id="top">
+  <div class="panel" id="home" data-panel="home">
+  <header class="hero">
+    <div class="hero-top">
+      <img class="avatar" src="shots/santosh.jpg" alt="Santosh Dhanjal" width="104" height="104">
+      <span class="status">Open to Lead, Senior and Product Manager roles · contract or permanent · London</span>
+    </div>
+    <h1>Senior Product Leader for <em>digital transformation, platforms and apps</em></h1>
+    <p class="lede">I have 10+ years' experience turning complex business problems into scalable digital products, from large-scale publishing platforms and mobile apps to internal tools and automation, using AI for rapid prototyping and building Claude skills to accelerate and improve product processes. I've worked across scale-ups and major UK media organisations, partnering with business and technical teams from discovery through to delivery.</p>
+    <div class="ctas">
+      <a class="btn primary" href="#work" data-tab="work">See case studies</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/santosh-dhanjal" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </header>
+
+  <div class="numbers" aria-label="Key achievements">
+    <div><strong>14.4M</strong><span>monthly users for iNews within 3 months, launched from concept in 4 weeks</span></div>
+    <div><strong>141</strong><span>regional news sites replatformed in 6 months</span></div>
+    <div><strong>~2 min</strong><span>to put a merchant offer live, down from 35 minutes, after a legacy CMS migration</span></div>
+    <div><strong>3M+</strong><span>new push notification subscribers in 6 months</span></div>
+  </div>
+
+  <div class="awards">
+    <span class="label">Recognition</span>
+    <span class="award"><b>Winner</b> · Product Development Team of the Year 2020</span>
+    <span class="award"><b>iNews</b> · National News Website of the Year 2020</span>
+    <span class="award"><b>iNews</b> · Gold, Media Brand of the Year 2019</span>
+    <span class="award"><b>iNews</b> · Silver, Digital Product of the Year 2019</span>
+    <span class="award"><b>iNews</b> · Best Designed Site</span>
+  </div>
+
+  <div class="featured">
+    <div class="feat-head"><span class="label">Featured case studies</span><a href="#work" data-tab="work" class="more">All case studies →</a></div>
+    <div class="feat-grid">
+      <a class="feat" href="#work" data-tab="work" data-open="case-merchant">
+        <span class="tag">Platforms</span>
+        <strong>Merchant management: legacy CMS to internal platform</strong>
+        <span class="feat-metric"><b>35 min → ~2 min</b> to put a merchant offer live</span>
+      </a>
+      <a class="feat" href="#work" data-tab="work" data-open="case-scotsman">
+        <span class="tag">Apps</span>
+        <strong>Curated news apps for The Scotsman and Yorkshire Post</strong>
+        <span class="feat-metric"><b>2.5★ → 4.3★</b> and <b>+18%</b> digital subscriptions</span>
+      </a>
+      <a class="feat" href="#work" data-tab="work" data-open="case-identity">
+        <span class="tag">Transformation</span>
+        <strong>Customer identity and single customer view</strong>
+        <span class="feat-metric"><b>99.9%</b> identity match in a POC, recognising one customer across <b>30+</b> brands</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="home-contact">
+    <h2>Let's talk</h2>
+    <div class="row">
+      <span class="addr">santosh.dhanjal@gmail.com</span>
+      <a class="btn ghost" href="https://www.linkedin.com/in/santosh-dhanjal" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  </div>
+
+  <section id="work" class="panel" data-panel="work" aria-labelledby="work-h">
+    <div class="sec-head">
+      <h2 id="work-h">Case studies</h2>
+    </div>
+
+    <div class="filters" role="group" aria-label="Filter case studies">
+      <button class="chip" id="f-all" data-f="all" aria-pressed="true">All</button>
+      <button class="chip" id="f-ai" data-f="ai" aria-pressed="false">AI</button>
+      <button class="chip" id="f-dt" data-f="dt" aria-pressed="false">Digital transformation</button>
+      <button class="chip" id="f-plat" data-f="plat" aria-pressed="false">Platforms</button>
+      <button class="chip" id="f-apps" data-f="apps" aria-pressed="false">Apps</button>
+    </div>
+
+    <div class="cases">
+
+      <details class="case" id="case-fusion" data-tags="ai">
+        <summary>
+          <div class="meta"><span class="tag">AI</span><span class="tag st">0→1</span><span class="tag st">In progress</span><span class="label">Capstone project · AI Product Management course · 2026</span></div>
+          <h3>Fusion Fit: AI prototype for bespoke outfits</h3>
+          <p class="hook">My capstone project: an AI prototype that turns scattered outfit inspiration into a designer-ready brief, then matches people with designers who can make it.</p>
+          <span class="toggle"><span class="o">Open +</span><span class="c">Close −</span></span>
+          <div class="headline"><span>Finding a designer <b>2.0 / 5 ease</b></span><span>Concept useful <b>10 of 11</b></span><span>Built with <b>AI Studio &amp; Stitch</b></span></div>
+        </summary>
+        <div class="body">
+          <div>
+            <h4>The challenge</h4>
+            <p>People commissioning a bespoke outfit collect ideas from Pinterest, Instagram, screenshots and WhatsApp, and want to combine details from several outfits. Turning that into something a designer can work from is hard, and finding the right designer is harder.</p>
+            <h4>What I did</h4>
+            <ul>
+              <li>Ran discovery through public Reddit threads and a questionnaire, then reframed the problem from "fusion weddings" to anyone commissioning a bespoke outfit when the data showed finding a designer was the bigger pain.</li>
+              <li>Wrote the PRD with every claim labelled as evidenced, hypothesis or open gap.</li>
+              <li>Experimented with Claude, Gemini, Perplexity and ChatGPT to create PRDs, using Claude skills, Gemini Gems and custom GPTs.</li>
+              <li>Compared Vercel v0 and Google AI Studio for prototyping, and chose AI Studio. Designed the UI in Stitch and built the working prototype in AI Studio.</li>
+              <li>Built my own agentic team of AI agents (PM, CTO, UX Lead and Evals Lead) plus Claude skills to stress-test decisions and check every claim before it is used.</li>
+              <li>Designed the AI tagging with guardrails: suggestions limited to a fixed style vocabulary, every tag confirmed by the user, no inference of religion or ethnicity, and personal details removed before the model call.</li>
+              <li>Kept designer matching simple and transparent: clear rules and a plain-language "why we matched you", with machine learning saved for when there's enough real data.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Early signals (11 responses)</h4>
+            <ul class="outcomes">
+              <li><span class="v">8 of 11</span><span>Scored finding a designer 1 or 2 out of 5</span></li>
+              <li><span class="v">9 of 11</span><span>Want details from several outfits combined</span></li>
+              <li><span class="v">10 of 11</span><span>Rated the concept useful (stated interest, not yet behaviour)</span></li>
+            </ul>
+            <h4>Next</h4>
+            <ul class="outcomes">
+              <li><span class="v">30+</span><span>Survey responses, plus designer interviews and a concierge test with real briefs</span></li>
+              <li><span class="v">≥80%</span><span>Target agreement between AI tags and designer tags, tested on 50 to 100 descriptions</span></li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <details class="case" id="case-merchant" data-tags="plat dt">
+        <summary>
+          <div class="meta"><span class="tag">Platforms</span><span class="tag st done">Delivered</span><span class="label">Quantum (iGaming affiliate) · Internal platform · 2026</span></div>
+          <h3>Merchant management: legacy CMS to internal platform</h3>
+          <p class="hook">Replaced a legacy CMS and its slow data pipeline so merchant offers go live in minutes, not days.</p>
+          <span class="toggle"><span class="o">Open +</span><span class="c">Close −</span></span>
+          <div class="headline"><span>Offer go-live <b>35 min → ~2 min</b></span><span>Changes <b>Instant</b></span><span>Legacy dependency <b>Removed</b></span></div>
+        </summary>
+        <div class="body">
+          <div>
+            <h4>The challenge</h4>
+            <p>Merchant offers were managed in a legacy CMS that relied on a batch data pipeline and multiple Google spreadsheets. Every weekly update needed several slow run-and-verify cycles, often spread over two days, which created a risky technical dependency and slowed the commercial team.</p>
+            <h4>What I did</h4>
+            <ul>
+              <li>Defined the four-phase merchant management roadmap, from MVP through HubSpot, process automation and ML-driven ranking, with the dependencies between each phase made explicit.</li>
+              <li>Led the MVP that replaced the legacy CMS with an internal platform, using a direct API integration in place of the batch pipeline.</li>
+              <li>Added the operational features the team asked for, including spreadsheet-friendly export and US state-restriction handling.</li>
+              <li>Kept improving the workflow through continuous feedback from operations.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Outcomes</h4>
+            <ul class="outcomes">
+              <li><span class="v">~2 min</span><span>To put an offer live, down from about 35 minutes</span></li>
+              <li><span class="v">Instant</span><span>Offer changes now visible straight away, with no pipeline wait</span></li>
+              <li><span class="v">Done</span><span>Legacy CMS retired and the platform de-risked (delivered June 2026)</span></li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <details class="case" id="case-identity" data-tags="plat dt">
+        <summary>
+          <div class="meta"><span class="tag">Transformation</span><span class="tag st">In progress</span><span class="label">Quantum (iGaming affiliate) · CDP &amp; CRM · 2026</span></div>
+          <h3>Customer identity and single customer view</h3>
+          <p class="hook">Knowing who each customer is across 30+ brands, so they are recognised as one person, not several separate leads.</p>
+          <span class="toggle"><span class="o">Open +</span><span class="c">Close −</span></span>
+          <div class="headline"><span>Brands <b>30+</b></span><span>Identity match in POC <b>99.9%</b></span></div>
+        </summary>
+        <div class="body">
+          <div>
+            <h4>The challenge</h4>
+            <p>Across 30+ brands, the business couldn't tell who its customers were. The same person signing up on two brands was treated as two separate leads, so CRM sent them the same content twice. With no persistent identity, there was also no reliable way to connect a first visit to a conversion, and attribution was split across tracking, CRM and third-party systems.</p>
+            <h4>What I did</h4>
+            <ul>
+              <li>Defined the enterprise product strategy for a persistent customer ID that acts as both the attribution anchor and the single customer view record.</li>
+              <li>Led discovery workshops with MarTech, CRM, data and engineering teams and wrote the requirements across identity, event tracking, lead management and single customer view.</li>
+              <li>Set out confidence tiers for identity matching and how anonymous visitors are stitched to known profiles.</li>
+              <li>Shaped a vendor-neutral evaluation of event tracking platforms, backed by a lightweight proof of concept.</li>
+              <li>Mapped every internal and external user of the legacy lead platform to define what its replacement must do.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Outcomes so far</h4>
+            <ul class="outcomes">
+              <li><span class="v">99.9%</span><span>Identity match accuracy proven in a proof of concept across 3 sites and multiple users, part of a wider data warehouse project</span></li>
+              <li><span class="v">Next</span><span>Roll out one customer identity across 30+ brands and touchpoints</span></li>
+              <li><span class="v">Next</span><span>Foundation for multi-touch attribution, personalisation and AI-driven decisions</span></li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <details class="case" id="case-hubspot" data-tags="dt ai">
+        <summary>
+          <div class="meta"><span class="tag">Transformation</span><span class="tag st done">Done</span><span class="label">Quantum (iGaming affiliate) · HubSpot · 2026</span></div>
+          <h3>Commercial operations rebuild in HubSpot</h3>
+          <p class="hook">Turning HubSpot from a contact list into the single source of truth for sales, onboarding and merchant data.</p>
+          <span class="toggle"><span class="o">Open +</span><span class="c">Close −</span></span>
+          <div class="headline"><span>Deal properties in use <b>3 of 57</b></span><span>Sales pipeline <b>9 → 3 stages</b></span><span>Onboarding <b>8 → 3 stages</b></span></div>
+        </summary>
+        <div class="body">
+          <div>
+            <h4>The challenge</h4>
+            <p>HubSpot was configured but barely used, and the team was on the wrong contract for what it needed. The real workflow lived in spreadsheets, forms, Slack and people's heads, so leadership had no reliable pipeline view and Finance and Ops found out about changes late. The audit found:</p>
+            <ul>
+              <li>Only 3 of 57 custom deal properties in active use.</li>
+              <li>43 of 58 deals stuck in the first onboarding stage, with none in any middle stage.</li>
+              <li>81 merchants grouped under one "Inactive" status, when there were really 8 different states.</li>
+              <li>0% fill rate on ops task briefs and deal-change fields, so changes had no audit trail.</li>
+            </ul>
+            <h4>What I did</h4>
+            <ul>
+              <li>Ran an audit of the HubSpot setup alongside discovery workshops and workflow analysis with Commercial leadership.</li>
+              <li>Wrote the implementation brief: new sales and onboarding pipelines, structured deal and budget fields, data cleanup and a Slack and email alert matrix.</li>
+              <li>Used AI rapid prototyping to turn my PRDs into a working prototype, so Sales, Operations and Finance could try the future-state experience and agree on it, then handed it to engineering to configure in HubSpot.</li>
+              <li>Made the business case for upgrading to a HubSpot Enterprise contract, and sequenced the rebuild as the prerequisite for process automation.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Outcomes</h4>
+            <ul class="outcomes">
+              <li><span class="v">−67%</span><span>Sales pipeline simplified from 9 stages to 3</span></li>
+              <li><span class="v">−63%</span><span>Onboarding process simplified from 8 stages to 3</span></li>
+              <li><span class="v">Done</span><span>Working prototype agreed with stakeholders and handed to engineering for configuration</span></li>
+              <li><span class="v">Next</span><span>100% of new prospects tracked as pipeline deals, &gt;95% of partners with a full record, and one leadership dashboard</span></li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <details class="case" data-tags="dt plat">
+        <summary>
+          <div class="meta"><span class="tag">Platforms</span><span class="tag st done">Live</span><span class="label">Quantum (iGaming affiliate) · Digital asset management · 2026</span></div>
+          <h3>Digital asset management with Bynder</h3>
+          <p class="hook">Moved brand assets from shared drives to a governed, searchable library across 30+ sub-brands.</p>
+          <span class="toggle"><span class="o">Open +</span><span class="c">Close −</span></span>
+          <div class="headline"><span>Live <b>Sept 2026</b></span><span>Sub-brands <b>30+</b></span><span>Asset discovery <b>2× faster (projected)</b></span></div>
+        </summary>
+        <div class="body">
+          <div>
+            <h4>The challenge</h4>
+            <p>After a rebrand and fast growth, a high volume of images and video lived in shared drives. Assets were hard to find, there was no clear view of what was approved, and permissions were too open.</p>
+            <h4>What I did</h4>
+            <ul>
+              <li>Defined the product strategy and business case for an enterprise digital asset management platform.</li>
+              <li>Led discovery workshops, vendor demonstrations and executive stakeholder engagement.</li>
+              <li>Partnered with Technology, Marketing and business leaders to agree on Bynder, including AI-assisted search.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Outcomes</h4>
+            <ul class="outcomes">
+              <li><span class="v">Live</span><span>Taken from discovery to signed contract and live in September 2026</span></li>
+              <li><span class="v">30+</span><span>Sub-brands on one governed asset library</span></li>
+              <li><span class="v">Control</span><span>Better governance, approval visibility and findability</span></li>
+            </ul>
+            <h4>Projected benefits (vendor business case)</h4>
+            <ul class="outcomes">
+              <li><span class="v">2×</span><span>Faster asset discovery, saving about 430 hours a year of searching</span></li>
+              <li><span class="v">+33%</span><span>Asset reuse, so fewer new assets need to be bought</span></li>
+              <li><span class="v">Less</span><span>Admin time on tagging and uploads, with AI auto-tagging</span></li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <details class="case" data-tags="dt ai">
+        <summary>
+          <div class="meta"><span class="tag">Transformation</span><span class="tag st">Planned</span><span class="label">Quantum (iGaming affiliate) · HubSpot &amp; internal platform · 2026</span></div>
+          <h3>Offer, deal and budget automation</h3>
+          <p class="hook">Consolidating six disconnected tools into one automated flow from signed deal to live offer.</p>
+          <span class="toggle"><span class="o">Open +</span><span class="c">Close −</span></span>
+          <div class="headline"><span>Ops effort <b>−60–70% target</b></span><span>Manual steps <b>6 removed, 16 automated</b></span></div>
+        </summary>
+        <div class="body">
+          <div>
+            <h4>The challenge</h4>
+            <p>The same offer and deal data was re-keyed across HubSpot deal and merchant fields, Google Forms, Google Sheets and Slack. Budgets and receivables were tracked in separate spreadsheets, and nobody was told automatically when terms changed or a financial threshold was breached.</p>
+            <h4>What I did</h4>
+            <ul>
+              <li>Ran customer interviews and end-to-end process mapping across Commercial, Operations and Finance.</li>
+              <li>Wrote the PRD, mapping six processes step by step: offer creation, drafting, deal changes, budgets, tenancy deals and aged receivables.</li>
+              <li>Used Claude to analyse each process and identify repetitive steps, then tagged every step as eliminated, automated, human review or new, so the team could see exactly what changes.</li>
+              <li>Designed rule-driven automation: a new commercial deal in HubSpot drafts the offer automatically, budget status is derived automatically, and partner activity pauses and resumes on finance rules.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Targets</h4>
+            <ul class="outcomes">
+              <li><span class="v">60–70%</span><span>Less Operations time on offer management</span></li>
+              <li><span class="v">16 of 22</span><span>Manual steps automated or assisted, and 6 removed entirely</span></li>
+              <li><span class="v">6 → 1</span><span>Disconnected tools consolidated into one platform</span></li>
+              <li><span class="v">Next</span><span>Lays the data foundation for ML-driven merchant ranking (from 2027)</span></li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <details class="case" id="case-scotsman" data-tags="apps">
+        <summary>
+          <div class="meta"><span class="tag">Apps</span><span class="tag st done">Live</span><span class="label">The Scotsman &amp; Yorkshire Post · iOS &amp; Android</span></div>
+          <h3>Curated news apps for The Scotsman and Yorkshire Post</h3>
+          <p class="hook">Relaunched a 2.5-star legacy app as a curated editorial app with morning and evening editions, and made it a driver of digital subscriptions.</p>
+          <span class="toggle"><span class="o">Open +</span><span class="c">Close −</span></span>
+          <div class="headline"><span>Rating <b>2.5★ → 4.3★</b></span><span>DAU <b>+25% in 4 months</b></span><span>Subscriptions <b>+18%</b></span></div>
+        </summary>
+        <div class="body">
+          <div>
+            <h4>The challenge</h4>
+            <p>A cluttered, slow app with inconsistent navigation, a clunky paywall with confusing tiers, and no saved articles, topic feeds or targeted notifications to bring readers back each day.</p>
+            <h4>What I did</h4>
+            <ul>
+              <li>Repositioned the app from "nice to have" to a growth channel in the subscription strategy.</li>
+              <li>Launched a curated editorial app with automated CMS integration, including morning and evening editions and a "5 things to read" digest.</li>
+              <li>Partnered with UX researchers on usage analysis and interviews about engagement, paywall friction and retention.</li>
+              <li>Prioritised funnel fixes across onboarding, paywall and account management, including one login across web and app.</li>
+              <li>Introduced saved articles, topic feeds and push notifications, and ran an A/B testing programme on onboarding and paywall placement.</li>
+              <li>Rolled the same app design and features, including puzzles, out to The Yorkshire Post.</li>
+              <li>Kept improving after launch: puzzles, dark mode, podcasts, video and a feedback form.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Outcomes</h4>
+            <ul class="outcomes">
+              <li><span class="v">4.3★</span><span>UK App Store rating from 1.8K ratings, up from 2.5★ for the legacy app</span></li>
+              <li><span class="v">+25%</span><span>Daily active users within four months of launch</span></li>
+              <li><span class="v">+25%</span><span>Average session time</span></li>
+              <li><span class="v">+18%</span><span>Digital subscriptions attributed to the new app funnel</span></li>
+              <li><span class="v">+20%</span><span>3-month subscriber retention</span></li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <details class="case" data-tags="apps">
+        <summary>
+          <div class="meta"><span class="tag">Apps</span><span class="tag st done">Live</span><span class="label">The Scotsman &amp; Yorkshire Post · iOS &amp; Android</span></div>
+          <h3>Puzzles in the app</h3>
+          <p class="hook">Moved crossword, sudoku and word games from print into the app as a daily habit and premium benefit.</p>
+          <span class="toggle"><span class="o">Open +</span><span class="c">Close −</span></span>
+          <div class="headline"><span>Avg session time <b>2 → 5–6 min</b></span><span>Premium puzzle tiers <b>Launched</b></span></div>
+        </summary>
+        <div class="body">
+          <div>
+            <h4>The challenge</h4>
+            <p>Puzzles were among readers' most requested features but only existed in print, and the app had little interactive content to bring people back daily.</p>
+            <h4>What I did</h4>
+            <ul>
+              <li>Defined the roadmap and secured buy-in from editorial, engineering and commercial teams.</li>
+              <li>Led delivery in agile sprints, including CMS integration for puzzle content.</li>
+              <li>Designed mobile-first interfaces with touch controls, hints, timers and progress, and ran user testing on difficulty and layout.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Outcomes</h4>
+            <ul class="outcomes">
+              <li><span class="v">~2.5–3×</span><span>Average engagement time per session across app users, up from about 2 minutes to 5–6 minutes a day</span></li>
+              <li><span class="v q">Habit</span><span>More daily return visits, helped by "Puzzle of the Day" notifications</span></li>
+              <li><span class="v q">Revenue</span><span>Premium puzzle tiers and subscription bundles</span></li>
+              <li><span class="v q">Workflow</span><span>CMS integration reduced publishing time</span></li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <details class="case" data-tags="apps plat">
+        <summary>
+          <div class="meta"><span class="tag">Apps</span><span class="tag st done">Live</span><span class="label">National World · OneSignal · Web, iOS &amp; Android</span></div>
+          <h3>Push notifications platform</h3>
+          <p class="hook">One push platform across web and apps, with real-time triggers, preferences and testing.</p>
+          <span class="toggle"><span class="o">Open +</span><span class="c">Close −</span></span>
+          <div class="headline"><span>Open rates <b>+50%</b></span><span>Opt-outs <b>−30%</b></span><span>Trial-to-paid <b>+15%</b></span></div>
+        </summary>
+        <div class="body">
+          <div>
+            <h4>The challenge</h4>
+            <p>Readers missed breaking stories or got them late, generic blasts drove opt-outs, new subscribers dropped off in onboarding and lapsed readers drifted away.</p>
+            <h4>What I did</h4>
+            <ul>
+              <li>Unified push notifications across all brands on web, iOS and Android using <a href="https://onesignal.com/" target="_blank" rel="noopener">OneSignal</a>.</li>
+              <li>Built breaking-news alerts triggered manually or automatically by newsroom publishing.</li>
+              <li>Added topic preferences and frequency controls readers set themselves.</li>
+              <li>Designed onboarding sequences and "we miss you" re-engagement journeys, and A/B tested messaging and timing.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Outcomes</h4>
+            <ul class="outcomes">
+              <li><span class="v">&lt;30s</span><span>Breaking news delivery, with a 60% lift in click-through</span></li>
+              <li><span class="v">+50%</span><span>Push open rates across news sites</span></li>
+              <li><span class="v">2×</span><span>Open rates for personalised alerts</span></li>
+              <li><span class="v">−30%</span><span>Users disabling notifications</span></li>
+              <li><span class="v">+15%</span><span>Trial-to-paid conversion from onboarding sequences</span></li>
+              <li><span class="v">12%</span><span>Dormant users re-engaged within 14 days</span></li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <details class="case" id="case-affiliate" data-tags="plat">
+        <summary>
+          <div class="meta"><span class="tag">Platforms</span><span class="tag st done">Live</span><span class="label">National World · Web</span></div>
+          <h3>Affiliate e-commerce hub</h3>
+          <p class="hook">Turned scattered shopping articles into one destination across beauty, tech, home, fashion and more.</p>
+          <span class="toggle"><span class="o">Open +</span><span class="c">Close −</span></span>
+          <div class="headline"><span>Affiliate revenue <b>+40% YoY</b></span><span>Organic traffic <b>+60%</b></span><span>Pages/session <b>+34%</b></span></div>
+        </summary>
+        <div class="body">
+          <div>
+            <h4>The challenge</h4>
+            <p>Recommendations lived in isolated articles, affiliate links were buried, there was no hub for readers to browse, and peaks like Black Friday and Christmas had no single destination.</p>
+            <h4>What I did</h4>
+            <ul>
+              <li>Brought together reader behaviour, analytics and editorial feedback to define the pain points.</li>
+              <li>Prioritised category navigation, curated "best of" lists and repeatable seasonal frameworks.</li>
+              <li>Worked with editorial on category structure, engineering on flexible CMS templates and commercial on sponsorship that didn't disrupt the experience.</li>
+              <li>Iterated on CTAs, link placement, navigation and star ratings, and set up dashboards for editorial and commercial teams.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Outcomes</h4>
+            <ul class="outcomes">
+              <li><span class="v">+40%</span><span>Affiliate-driven revenue year on year</span></li>
+              <li><span class="v">+55%</span><span>Seasonal affiliate conversions vs the previous year's standalone articles</span></li>
+              <li><span class="v">+60%</span><span>Organic search traffic to shopping content</span></li>
+              <li><span class="v">+34%</span><span>Pages per session</span></li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <details class="case" data-tags="plat">
+        <summary>
+          <div class="meta"><span class="tag">Platforms</span><span class="tag st">0→1</span><span class="tag st done">Live</span><span class="label">National World · Web</span></div>
+          <h3>3 Added Minutes football website</h3>
+          <p class="hook">A new football brand for fans who wanted more than match reports, funded by an ad-lite subscription.</p>
+          <span class="toggle"><span class="o">Open +</span><span class="c">Close −</span></span>
+          <div class="headline"><span>Unique visitors <b>+55%</b></span><span>Ad-lite conversion <b>8–12%</b></span></div>
+        </summary>
+        <div class="body">
+          <div>
+            <h4>The challenge</h4>
+            <p>No football-only vertical existed. It had to win passionate fans in a crowded market and make an ad-lite subscription feel worth paying for.</p>
+            <h4>What I did</h4>
+            <ul>
+              <li>Ran 20+ interviews and surveys with supporter groups. Fans wanted opinion, gaming and competitions, and named ad clutter as a key frustration.</li>
+              <li>Mapped reader and subscription journeys and tested Figma wireframes with fans to refine navigation and subscription messaging.</li>
+              <li>Shipped an MVP with content sections, newsletter sign-up, push notifications, club and competition taxonomy and a subscription flow with about 70% fewer ads.</li>
+              <li>See the site: <a href="https://www.3addedminutes.com/" target="_blank" rel="noopener">3addedminutes.com</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Outcomes</h4>
+            <ul class="outcomes">
+              <li><span class="v">+55%</span><span>Unique visitors within 3 months of launch</span></li>
+              <li><span class="v">8–12%</span><span>Loyal readers converted to ad-lite subscriptions</span></li>
+              <li><span class="v">+25%</span><span>Dwell time on fan-centric sections vs baseline</span></li>
+              <li><span class="v">+35%</span><span>Newsletter subscriptions</span></li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <details class="case" data-tags="plat apps">
+        <summary>
+          <div class="meta"><span class="tag">Platforms</span><span class="tag st done">Live</span><span class="label">National World · Viafoura · Web &amp; app</span></div>
+          <h3>Commenting platform</h3>
+          <p class="hook">Brought reader conversations back on-site with Viafoura, using its full feature set from subscriber-only threads to a personalised news feed.</p>
+          <span class="toggle"><span class="o">Open +</span><span class="c">Close −</span></span>
+          <div class="headline"><span>Session duration <b>+35%</b></span><span>Renewals <b>+12%</b></span></div>
+        </summary>
+        <div class="body">
+          <div>
+            <h4>The challenge</h4>
+            <p>Articles had no commenting, so conversations happened on Facebook and Twitter and readers had little reason to return.</p>
+            <h4>What I did</h4>
+            <ul>
+              <li>Led vendor selection, the pilot and rollout across national, regional and vertical titles on web and app.</li>
+              <li>Introduced subscriber-only threads with journalist participation and a guest commenting trial.</li>
+              <li>Used the full <a href="https://viafoura.com/" target="_blank" rel="noopener">Viafoura</a> feature set: a personalised news feed, follows, alerts and notifications, and Viafoura analytics to track engagement.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Outcomes</h4>
+            <ul class="outcomes">
+              <li><span class="v">+35%</span><span>Average session duration</span></li>
+              <li><span class="v">+20%</span><span>Repeat visits among registered users</span></li>
+              <li><span class="v">+12%</span><span>Subscription renewals where commenting was active</span></li>
+              <li><span class="v">8%</span><span>Anonymous readers converted to registered users</span></li>
+              <li><span class="v">−50%</span><span>Moderation workload through AI-powered filtering</span></li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <details class="case" data-tags="dt plat">
+        <summary>
+          <div class="meta"><span class="tag">Transformation</span><span class="tag st done">Live</span><span class="label">Johnston Press · Web</span></div>
+          <h3>Personalised homepages with Dynamic Yield</h3>
+          <p class="hook">Replaced a one-size-fits-all homepage with recommendations based on reading history and trends.</p>
+          <span class="toggle"><span class="o">Open +</span><span class="c">Close −</span></span>
+          <div class="headline"><span>Click-through <b>↑</b></span><span>Articles per visit <b>↑</b></span><span>Sign-ups <b>↑</b></span></div>
+        </summary>
+        <div class="body">
+          <div>
+            <h4>The challenge</h4>
+            <p>Every reader saw the same top stories, section pages made relevant articles hard to find, and there was no experimentation across audience segments.</p>
+            <h4>What I did</h4>
+            <ul>
+              <li>Defined the personalisation strategy and led the Dynamic Yield integration into the CMS and templates.</li>
+              <li>Segmented readers by recency, frequency and topic interest.</li>
+              <li>Tested personalised vs static modules and compared most-popular, collaborative filtering and trending models.</li>
+              <li>Rolled out in phases from homepage to section pages to article recommendations.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Outcomes</h4>
+            <ul class="outcomes">
+              <li><span class="v q">CTR ↑</span><span>Higher click-through on personalised modules than static ones</span></li>
+              <li><span class="v q">Depth ↑</span><span>Longer sessions and more articles per visit</span></li>
+              <li><span class="v q">Subs ↑</span><span>More sign-ups when personalised content was paired with offers</span></li>
+              <li><span class="v q">Scale</span><span>Templates reused across new verticals; less manual curation</span></li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <details class="case" data-tags="plat">
+        <summary>
+          <div class="meta"><span class="tag">Platforms</span><span class="tag st">0→1</span><span class="tag st done">Live</span><span class="label">National World · Web &amp; app</span></div>
+          <h3>Video article pages and video hub</h3>
+          <p class="hook">Gave newsrooms the tools to publish video and gave readers a place to find it.</p>
+          <span class="toggle"><span class="o">Open +</span><span class="c">Close −</span></span>
+          <div class="headline"><span>Video hub <b>Launched</b></span><span>Ad formats <b>Pre, mid &amp; post-roll</b></span></div>
+        </summary>
+        <div class="body">
+          <div>
+            <h4>The challenge</h4>
+            <p>Articles relied on text and images, newsrooms couldn't publish video easily, and there was no central place to browse video.</p>
+            <h4>What I did</h4>
+            <ul>
+              <li>Led market research and defined the video strategy and roadmap.</li>
+              <li>Integrated a video CMS and player (Brightcove) and worked with commercial on ad formats and branded content.</li>
+              <li>Built video article templates, modules and a video hub, and trained editorial teams.</li>
+              <li>A/B tested placement, autoplay vs click-to-play and short vs long form.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Outcomes</h4>
+            <ul class="outcomes">
+              <li><span class="v q">Rollout</span><span>Phased across the portfolio, including vertical sites</span></li>
+              <li><span class="v q">Legacy</span><span>The product has kept evolving and now runs on Dailymotion</span></li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+      <details class="case" data-tags="plat dt">
+        <summary>
+          <div class="meta"><span class="tag">Platforms</span><span class="tag st done">Live</span><span class="label">National World · CMS</span></div>
+          <h3>Standardised CMS templates and photo articles</h3>
+          <p class="hook">One modular template system for news, live, video, photo and e-commerce pages.</p>
+          <span class="toggle"><span class="o">Open +</span><span class="c">Close −</span></span>
+          <div class="headline"><span>Template variants <b>↓</b></span><span>Page speed <b>↑</b></span><span>Publishing time <b>↓</b></span></div>
+        </summary>
+        <div class="body">
+          <div>
+            <h4>The challenge</h4>
+            <p>Each page type had its own layout, workflow and data structure. Editors were slowed down, readers saw inconsistent experiences and every change had to be built several times.</p>
+            <h4>What I did</h4>
+            <ul>
+              <li>Audited every template and ran workshops with editorial, design, ad-tech and SEO teams.</li>
+              <li>Defined reusable components such as hero media, galleries, live ticker, product carousel and CTA blocks.</li>
+              <li>Led the photo-article format end to end, testing hero vs gallery and caption styles for time on page and scroll depth.</li>
+              <li>Managed phased migration, training and feedback with editorial leads.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Outcomes</h4>
+            <ul class="outcomes">
+              <li><span class="v q">Speed</span><span>Faster page loads and stronger Core Web Vitals</span></li>
+              <li><span class="v q">Ops</span><span>Fewer variants to maintain and quicker feature releases</span></li>
+              <li><span class="v q">Revenue</span><span>Consistent ad slots and sponsored modules across formats</span></li>
+            </ul>
+          </div>
+        </div>
+      </details>
+
+    <div class="earlier">
+      <span class="label">Earlier launches · in the press</span>
+      <ul>
+        <li><span>2012</span><a href="https://www.holdthefrontpage.co.uk/2012/news/papers-launch-new-apps-in-time-for-tablet-christmas/" target="_blank" rel="noopener">New apps for national and regional titles</a></li>
+        <li><span>2013</span><span class="plain">Redesign of desktop regional websites: <a href="https://www.holdthefrontpage.co.uk/2013/news/regional-dailies-unveil-new-look-websites-in-jp-roll-out/" target="_blank" rel="noopener">launch</a> and <a href="https://www.holdthefrontpage.co.uk/2013/news/johnston-press-completes-new-website-rollout/" target="_blank" rel="noopener">rollout complete</a></span></li>
+        <li><span>2016</span><a href="https://www.inpublishing.co.uk/articles/johnston-press-announces-further-responsive-site-and-app-launches-4609" target="_blank" rel="noopener">Responsive websites and app launches</a></li>
+        <li><span>2017</span><span class="plain">Football apps for Sunderland, Sheffield, Yorkshire, Blackpool, Peterborough, Portsmouth and Edinburgh</span></li>
+        <li><span>2019</span><a href="https://www.journalism.co.uk/news/jpimedia-steps-up-its-mobile-first-strategy-with-a-new-i-newspaper-app/s2/a746312/" target="_blank" rel="noopener">iNews app</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience" class="panel" data-panel="experience" aria-labelledby="exp-h">
+    <div class="sec-head">
+      <h2 id="exp-h">Experience</h2>
+    </div>
+    <ol class="roles">
+      <li class="role">
+        <span class="when">Jan 2026 – Sep 2026</span>
+        <div>
+          <h3>Senior Contract Product Manager</h3>
+          <div class="org">Quantum Media · award-winning affiliate marketing scale-up in iGaming and other verticals</div>
+          <ul>
+            <li>Led a legacy CMS migration to an internal SaaS platform, so merchant offers go live in about 2 minutes instead of 35.</li>
+            <li>Defined the workflow automation strategy (HubSpot and an internal platform) to consolidate six disconnected tools into one platform, targeting a 60–70% reduction in operational effort.</li>
+            <li>Defined a customer identity and single customer view strategy across 30+ brands, with 99.9% identity match accuracy proven in a proof of concept.</li>
+            <li>Took a Bynder digital asset management business case from discovery to signed contract and go-live in September 2026, across 30+ sub-brands.</li>
+            <li>Redesigned HubSpot sales and onboarding pipelines from 9 and 8 stages to 3 each, using AI-powered prototypes to align stakeholders.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="role">
+        <span class="when">Apr 2023 – Jan 2025</span>
+        <div>
+          <h3>Head of Product</h3>
+          <div class="org">National World Corporate</div>
+          <ul>
+            <li>Led a team of 5 product managers across 56 websites and 13 apps on a shared CMS.</li>
+            <li>Launched a curated editorial app with automated CMS feeds, raising daily active users by 25% in four months.</li>
+            <li>Rolled out a CMS curation platform to 10+ regional teams, reducing time to publish by about 30%.</li>
+            <li>Launched personalised homepages and behavioural recommendations across editorial and affiliate journeys.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="role">
+        <span class="when">Dec 2016 – Apr 2023</span>
+        <div>
+          <h3>Senior Product Manager</h3>
+          <div class="org">JPI Media</div>
+          <ul>
+            <li>Replatformed 141 regional news websites in six months.</li>
+            <li>Took the iNews website from concept to launch in four weeks, reaching 14.4M monthly users in its first three months.</li>
+            <li>Launched 12 mobile apps with segmented push strategies that brought 3M+ new subscribers in six months.</li>
+            <li>Built ROI-driven business cases that secured three strategic partnerships.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="role">
+        <span class="when">Jan 2013 – Dec 2016</span>
+        <div>
+          <h3>Product Manager</h3>
+          <div class="org">Johnston Press</div>
+          <ul>
+            <li>Introduced personalisation and A/B testing across 13 news sites, raising click-through by 30%.</li>
+            <li>Delivered a GDPR-compliant account and login platform for 100+ publications, enabling subscriptions.</li>
+            <li>Launched The Scotsman app, 11 football apps and live blogging tools.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="role">
+        <span class="when">Dec 2010 – Dec 2012</span>
+        <div>
+          <h3>Product Owner</h3>
+          <div class="org">European Directories</div>
+          <ul>
+            <li>Built an ROI reporting portal across seven European operating companies.</li>
+            <li>Replaced a legacy sales tool with an automated Omniture batch operations platform.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="role">
+        <span class="when">Apr 2008 – Nov 2010</span>
+        <div>
+          <h3>Business Analyst</h3>
+          <div class="org">QCDA</div>
+          <ul>
+            <li>Delivered the National Database of Accredited Qualifications for England, Wales and Northern Ireland, and a web-based accreditation system.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="role">
+        <span class="when">Aug 2006 – Apr 2008</span>
+        <div>
+          <h3>Performance Analyst</h3>
+          <div class="org">Audit Commission</div>
+          <ul>
+            <li>Built web-based tools for councils to benchmark service performance and value for money.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="role">
+        <span class="when">Jul 2005 – Aug 2006</span>
+        <div>
+          <h3>Business Analyst</h3>
+          <div class="org">Transport for London</div>
+          <ul>
+            <li>Delivered a dashboard that automated performance reporting across operations, finance, technology and corporate functions.</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="skills" class="panel" data-panel="skills" aria-labelledby="skills-h">
+    <div class="sec-head">
+      <h2 id="skills-h">Skills</h2>
+    </div>
+    <div class="skills">
+      <div>
+        <h3>Strategy &amp; leadership</h3>
+        <ul><li>Product strategy &amp; roadmapping</li><li>Digital transformation</li><li>Business cases &amp; ROI</li><li>Executive &amp; stakeholder alignment</li><li>Team leadership (team of 5 PMs)</li><li>Mentoring &amp; coaching</li><li>Vendor selection &amp; evaluation</li><li>Market &amp; competitive analysis</li><li>Go-to-market</li><li>Prioritisation</li><li>Roadmap sequencing &amp; dependencies</li></ul>
+      </div>
+      <div>
+        <h3>Discovery &amp; delivery</h3>
+        <ul><li>User research &amp; interviews</li><li>Customer journey &amp; process mapping</li><li>User personas</li><li>Discovery workshops</li><li>Wireframing &amp; prototyping</li><li>PRDs &amp; requirements</li><li>A/B testing &amp; experimentation</li><li>KPIs &amp; dashboards</li><li>Heatmap &amp; analytics review</li><li>Phased rollouts &amp; migrations</li><li>Agile &amp; Scrum</li><li>UX &amp; UI principles</li></ul>
+      </div>
+      <div>
+        <h3>Platforms &amp; domains</h3>
+        <ul><li>CMS &amp; content platforms</li><li>Platform migration &amp; replatforming</li><li>Mobile apps (iOS &amp; Android)</li><li>Personalisation &amp; recommendations</li><li>Push notifications &amp; CRM journeys</li><li>Subscriptions, paywalls &amp; ad-lite models</li><li>Affiliate &amp; e-commerce</li><li>Customer identity, CDP &amp; attribution</li><li>Workflow automation</li><li>Digital asset management</li><li>Community &amp; commenting</li><li>Video</li><li>SEO &amp; discoverability</li><li>GDPR-compliant registration</li></ul>
+      </div>
+      <div>
+        <h3>AI &amp; tools</h3>
+        <ul><li>AI-powered rapid prototyping</li><li>Agentic AI teams</li><li>AI guardrails &amp; evals</li><li>Google AI Studio</li><li>Stitch</li><li>Vercel v0</li><li>Gemini &amp; Gems</li><li>ChatGPT custom GPTs</li><li>Perplexity</li><li>Claude</li><li>Claude skills</li><li>Figma</li><li>Figma Make</li><li>Lovable</li><li>n8n</li><li>HubSpot</li><li>OneSignal</li><li>Viafoura</li><li>Bynder</li><li>Brightcove</li><li>Jira</li><li>Confluence</li></ul>
+      </div>
+    </div>
+    <div class="edu-wrap">
+      <div class="sec-head"><h2>Education &amp; learning</h2></div>
+        <ul class="edu">
+          <li>AI Product Management Bootcamp &amp; Certification, Maven <span>Ongoing</span></li>
+          <li>AI Ethics, University of Cambridge <span>2026</span></li>
+          <li>Product Leadership, Roman Pichler <span>2023</span></li>
+          <li>Professional Scrum Master I, Scrum.org <span>2017</span></li>
+          <li>UX and Interactive Design, Webcredible <span>2014</span></li>
+          <li>ITIL V3 Foundation <span>2011</span></li>
+          <li>BSc (Hons) Computer Information Systems Design, Kingston University <span>2005</span></li>
+        </ul>
+    </div>
+  </section>
+
+  <section id="mentoring" class="panel" data-panel="mentoring" aria-labelledby="mentoring-h">
+    <div class="sec-head">
+      <h2 id="mentoring-h">Mentoring</h2>
+    </div>
+    <div class="mentor-intro">
+      <div class="read">
+        <p class="pull">I'm happy to mentor anyone in product, whether you're just starting out or stepping up into leadership.</p>
+        <p>I have 10+ years of product management experience driving growth and retention across B2C and B2B publishing, affiliate commerce and subscription businesses. I've led the development of scalable digital products across web, mobile and CMS platforms, and I've managed a team of product managers.</p>
+        <p>As a mentor, I enjoy helping product managers develop their product thinking, leadership skills and confidence to accelerate their careers.</p>
+      </div>
+      <div class="mentor-facts">
+        <img class="avatar lg" src="shots/santosh.jpg" alt="Santosh Dhanjal at a Female Product Lead event" width="120" height="120" loading="lazy">
+        <div><span class="label">Who I mentor</span><span>Career switchers, Associate PMs, PMs and Senior PMs</span></div>
+        <div><span class="label">Experience</span><span>Enterprise and scale-up · B2B and B2C</span></div>
+        <div><span class="label">Specialisms</span><span>Media and mobile</span></div>
+        <div class="row">
+          <a class="btn primary" href="#contact" data-tab="contact">Get in touch about mentoring</a>
+        </div>
+      </div>
+    </div>
+    <h3 class="sub mhead">How I can help</h3>
+    <div class="mgrid">
+        <div class="mgroup">
+          <h3>Career progression</h3>
+          <ul><li>Moving from Associate PM to PM, Senior PM, Group PM and Director</li><li>Spotting capability gaps for promotion</li><li>Development plans and growth milestones</li><li>Building your leadership identity</li></ul>
+        </div>
+        <div class="mgroup">
+          <h3>Breaking into product</h3>
+          <ul><li>Moving into product from another career</li><li>Identifying your transferable skills</li><li>Building a portfolio without product experience</li><li>Preparing for first PM interviews</li></ul>
+        </div>
+        <div class="mgroup">
+          <h3>CVs and job search</h3>
+          <ul><li>Product CVs that quantify impact</li><li>Optimising for applicant tracking systems</li><li>LinkedIn, recruiters and target companies</li><li>Interview preparation and salary negotiation</li></ul>
+        </div>
+        <div class="mgroup">
+          <h3>Product craft</h3>
+          <ul><li>Discovery, user research and customer interviews</li><li>Experiments and hypothesis testing</li><li>Outcome-based roadmaps and prioritisation (RICE, MoSCoW)</li><li>Metrics and product analytics</li></ul>
+        </div>
+        <div class="mgroup">
+          <h3>Strategy and vision</h3>
+          <ul><li>Creating and communicating a product vision</li><li>Connecting product strategy to business outcomes</li><li>Competitive and market analysis</li><li>Portfolio strategy and long-term planning</li></ul>
+        </div>
+        <div class="mgroup">
+          <h3>Leadership and stakeholders</h3>
+          <ul><li>Influencing executives and building alignment</li><li>Leading through influence and managing teams</li><li>Coaching and mentoring others</li><li>Confidence, resilience and imposter syndrome</li></ul>
+        </div>
+    </div>
+  </section>
+
+  <section id="about" class="panel" data-panel="about" aria-labelledby="about-h">
+    <div class="sec-head">
+      <h2 id="about-h">About</h2>
+    </div>
+    <div class="about">
+      <div class="read">
+        <p class="pull">I'm most interested in where product, technology and AI meet: turning complex business problems into clear strategies, prioritised roadmaps and practical solutions teams can deliver.</p>
+        <p>I'm a senior product leader with 10+ years' experience delivering digital products, platforms and transformation programmes across publishing, media and technology.</p>
+        <p>I started my career in business analysis before moving into product management in 2013, progressing from Product Manager to Senior Product Manager and Head of Product, where I led a team of 5 product managers. I've led large-scale initiatives spanning web and mobile platforms, personalisation, customer engagement, internal tooling, workflow automation and operational transformation.</p>
+        <p>That includes migrating 141 websites onto a new platform, launching curated news apps for The Scotsman and Yorkshire Post, and building personalised experiences across web and apps. More recently at Quantum, an award-winning affiliate marketing scale-up in iGaming, I've worked on internal platforms for merchant management, customer identity, commercial operations, workflow automation and digital asset management, using AI for rapid prototyping and building Claude skills to accelerate and improve product processes.</p>
+        <p>I'm a <a href="https://partnerup.intelligentpeople.co.uk/mentor/santosh-kaur-dhanjal/" target="_blank" rel="noopener">Product Mentor at Intelligent People</a> and volunteer with <a href="https://femaleproductlead.com/" target="_blank" rel="noopener">Female Product Lead</a>. I'm currently taking the AI Product Management Bootcamp on Maven, taught by product and AI leaders from Google, Meta and Anthropic, and I keep building my skills through hands-on projects in AI workflows, prototyping and evaluation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact panel" id="contact" data-panel="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h">Let's talk</h2>
+    <div class="row">
+      <span class="addr" id="email">santosh.dhanjal@gmail.com</span>
+      <button class="btn primary" id="copy" type="button">Copy email</button>
+      <a class="btn ghost" href="https://www.linkedin.com/in/santosh-dhanjal" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <span class="note" id="copy-note" aria-live="polite"></span>
+  </section>
+
+  <footer>Santosh Dhanjal · London · Updated October 2026</footer>
+</main>
+
+<script>
+(function(){
+  var panels=document.querySelectorAll('[data-panel]');
+  var links=document.querySelectorAll('nav.top [data-tab]');
+  var ids=[];panels.forEach(function(p){ids.push(p.getAttribute('data-panel'))});
+  function show(id,scroll){
+    if(ids.indexOf(id)<0) id='home';
+    panels.forEach(function(p){p.hidden=p.getAttribute('data-panel')!==id});
+    links.forEach(function(l){ if(l.getAttribute('data-tab')===id && l.closest('ul')) l.setAttribute('aria-current','page'); else l.removeAttribute('aria-current'); });
+    if(scroll) window.scrollTo(0,0);
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('[data-tab]'); if(!a) return;
+    e.preventDefault(); var id=a.getAttribute('data-tab');
+    try{history.replaceState(null,'','#'+id)}catch(err){}
+    show(id,true);
+    var target=a.getAttribute('data-open');
+    if(target){
+      var all=document.getElementById('f-all'); if(all) all.click();
+      var d=document.getElementById(target);
+      if(d){ d.open=true; d.scrollIntoView({block:'start'}); }
+    }
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),true)});
+  show((location.hash||'').slice(1),false);
+})();
+(function(){
+  var chips=document.querySelectorAll('.chip');
+  var cases=document.querySelectorAll('.case');
+  chips.forEach(function(c){
+    c.addEventListener('click',function(){
+      var f=c.getAttribute('data-f');
+      chips.forEach(function(x){x.setAttribute('aria-pressed',x===c?'true':'false')});
+      cases.forEach(function(k){
+        var tags=(k.getAttribute('data-tags')||'').split(' ');
+        k.hidden=!(f==='all'||tags.indexOf(f)>-1);
+      });
+    });
+  });
+  var btn=document.getElementById('copy'),note=document.getElementById('copy-note'),em=document.getElementById('email');
+  btn.addEventListener('click',function(){
+    var t=em.textContent.trim();
+    function fallback(){
+      var r=document.createRange();r.selectNodeContents(em);
+      var s=window.getSelection();s.removeAllRanges();s.addRange(r);
+      note.textContent='Email selected. Press Ctrl+C or ⌘C to copy.';
+    }
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(t).then(function(){note.textContent='Email copied.'},fallback);
+    }else{fallback()}
+  });
+})();
+</script>
+
+</body>
+</html>
