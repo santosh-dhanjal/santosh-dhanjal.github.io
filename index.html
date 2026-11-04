@@ -229,6 +229,12 @@ h3.sub{font-size:18px;font-weight:600;margin-bottom:6px}
 .pk-start p{margin:0 0 8px}
 .pk-small{font-size:14px;color:var(--muted)}
 @media (max-width:860px){.pk-grid{grid-template-columns:1fr}}
+.areas{margin-top:14px;padding:22px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.areas h3{font-size:18px;font-weight:600;margin-bottom:4px}
+.areas ol{margin:10px 0 0;padding-left:22px;display:grid;grid-template-columns:repeat(2,1fr);gap:8px 32px}
+.areas li{padding-left:4px}
+.areas li::marker{color:var(--accent);font-family:var(--mono)}
+@media (max-width:760px){.areas ol{grid-template-columns:1fr}}
 footer{padding-block:0 40px;font-family:var(--mono);font-size:12.5px;color:var(--muted)}
 @media (prefers-reduced-motion:no-preference){
   .chip,.btn{transition:background .15s,color .15s}
@@ -989,7 +995,6 @@ footer{padding-block:0 40px;font-family:var(--mono);font-size:12.5px;color:var(-
   <section id="mentoring" class="panel" data-panel="mentoring" aria-labelledby="mentoring-h">
     <div class="sec-head">
       <h2 id="mentoring-h">Mentoring</h2>
-      <p>Helping people get into product, and get on in product.</p>
     </div>
     <div class="mentor-intro">
       <div class="read">
@@ -1029,6 +1034,11 @@ footer{padding-block:0 40px;font-family:var(--mono);font-size:12.5px;color:var(-
         <div class="price">£450 <span>£75 a session</span></div>
         <p>Six mentoring sessions covering all development areas, including a product competency self-assessment, CV and LinkedIn feedback, a mock interview, progress reviews and a 60-day career development roadmap.</p>
       </div>
+    </div>
+    <div class="areas">
+      <h3>Areas of support</h3>
+      <p class="pk-small">Choose sessions tailored to your needs:</p>
+      <ol><li>Career Direction &amp; Confidence</li><li>Product Competency Assessment &amp; Leadership Confidence</li><li>CV Review &amp; Career Positioning</li><li>LinkedIn Profile &amp; Job Search Strategy</li><li>Product Management Interview Preparation</li><li>Career Progression &amp; Leadership Development</li></ol>
     </div>
     <div class="pk-start">
       <div>
