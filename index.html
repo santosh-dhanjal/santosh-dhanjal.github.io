@@ -245,6 +245,7 @@ h3.sub{font-size:18px;font-weight:600;margin-bottom:6px}
 .recs{margin-top:56px;scroll-margin-top:84px}
 .recs h2{font-size:clamp(26px,3.4vw,34px)}
 .rec-h{margin:28px 0 12px}
+#recommendations .rec-h:first-of-type{margin-top:0}
 @media (max-width:860px){.rec-grid,.rec-grid.three{grid-template-columns:1fr}}
 .rec.mentee{margin-top:40px;border-left:3px solid var(--accent)}
 .rec.mentee blockquote p{margin:0 0 12px;font-size:17px}
@@ -264,6 +265,7 @@ footer{padding-block:0 40px;font-family:var(--mono);font-size:12.5px;color:var(-
     <ul>
       <li><a href="#work" data-tab="work">Case studies</a></li>
       <li><a href="#experience" data-tab="experience">Experience</a></li>
+      <li><a href="#recommendations" data-tab="recommendations">Recommendations</a></li>
       <li><a href="#skills" data-tab="skills">Skills &amp; education</a></li>
       <li><a href="#mentoring" data-tab="mentoring">Mentoring</a></li>
       <li><a href="#about" data-tab="about">About</a></li>
@@ -326,7 +328,7 @@ footer{padding-block:0 40px;font-family:var(--mono);font-size:12.5px;color:var(-
   </div>
 
   <div class="featured">
-    <div class="feat-head"><span class="label">What people say</span><a href="#about" data-tab="about" data-open="recommendations" class="more">All recommendations →</a></div>
+    <div class="feat-head"><span class="label">What people say</span><a href="#recommendations" data-tab="recommendations" class="more">All recommendations →</a></div>
     <div class="rec-grid three">
       <figure class="rec">
         <blockquote>“An excellent Snr. PM in every aspect. She really does deliver and does it at a high standard so I recommend her highly and would hire her in a heartbeat if I could.”</blockquote>
@@ -989,6 +991,55 @@ footer{padding-block:0 40px;font-family:var(--mono);font-size:12.5px;color:var(-
     </ol>
   </section>
 
+  <section id="recommendations" class="panel" data-panel="recommendations" aria-labelledby="recs-h">
+    <div class="sec-head">
+      <h2 id="recs-h">Recommendations</h2>
+    </div>
+      <p class="pk-small">From LinkedIn, shortened in places.</p>
+      <h3 class="sub rec-h">Recent</h3>
+      <div class="rec-grid">
+      <figure class="rec">
+        <blockquote>“An excellent Snr. PM in every aspect. Santosh is proactive asking questions, seeking out information, understanding the business problem and then structuring a clear plan around options and/or paths to outcomes. She is analytical in her approach, extremely well organised as well as structured with her output and knows how to organise and manage delivery teams. She really does deliver and does it at a high standard so I recommend her highly and would hire her in a heartbeat if I could.”</blockquote>
+        <figcaption><strong>Nicola Barnett</strong><span>VP, Customer Data &amp; Orchestration</span><span class="rec-meta">Senior to Santosh · 2026</span></figcaption>
+      </figure>
+      <figure class="rec">
+        <blockquote>“Santosh was an exceptionally knowledgeable and collaborative colleague with whom I thoroughly enjoyed working. Her expertise was highly valuable throughout our time working together, and added huge value in a number of areas across product, tech, and marketing.”</blockquote>
+        <figcaption><strong>Luke Watkin</strong><span>VP, Growth</span><span class="rec-meta">Worked with Santosh on different teams · 2026</span></figcaption>
+      </figure>
+      <figure class="rec">
+        <blockquote>“Santosh was a pleasure to work with. She is very knowledgeable, hard working, collaborative, passionate and had great ideas that were brought to life.”</blockquote>
+        <figcaption><strong>Jade Power</strong><span>CRO, sustainable digital monetisation</span><span class="rec-meta">Worked with Santosh on different teams · 2025</span></figcaption>
+      </figure>
+      <figure class="rec">
+        <blockquote>“I worked with Santosh at Johnston Press for a number of years and found her to be excellent in her role as Product Owner. Working with an offshore development team brings its challenges but Santosh is diligent, hard working and a great team player. She is a joy to work with.”</blockquote>
+        <figcaption><strong>Gemma Edwards</strong><span>Senior Product Manager</span><span class="rec-meta">Same team at Johnston Press · 2017</span></figcaption>
+      </figure>
+      </div>
+      <h3 class="sub rec-h">Earlier in my career</h3>
+      <div class="rec-grid">
+      <figure class="rec">
+        <blockquote>“Santosh is results driven and understands business priorities over noise. She has the ability to challenge requirements intelligently without causing offence and bring people on the journey with her. This collaborative approach gets the best out of the teams she works in.”</blockquote>
+        <figcaption><strong>Brendan Drake</strong><span>VP, Professional Services &amp; Pre-Sales, International</span><span class="rec-meta">Same team · 2012</span></figcaption>
+      </figure>
+      <figure class="rec">
+        <blockquote>“Santosh was originally brought in to help fully operationalise one of the biggest new projects in European Directories. She is focused but also a capable all-rounder able to fill gaps when needed. I highly recommend her and feel she is one of the best hires I&#x27;ve had in a while!”</blockquote>
+        <figcaption><strong>James Blackstock</strong><span>Senior Delivery Director</span><span class="rec-meta">Managed Santosh directly · 2011</span></figcaption>
+      </figure>
+      <figure class="rec">
+        <blockquote>“Santosh is a highly skilled, talented and professional Business Analyst. She impressed so much that she was invited back to work with us after she graduated, where she not only quickly grew into her BA role to an extremely high level of professionalism but she managed to add considerable value to the Project Team.”</blockquote>
+        <figcaption><strong>David Caldwell</strong><span>Managing Editor</span><span class="rec-meta">Senior to Santosh · 2011</span></figcaption>
+      </figure>
+      <figure class="rec">
+        <blockquote>“Santosh proved to be an excellent Requirements Analyst providing both leadership and input into a business critical Business Requirements Document. She demonstrated a business focussed attitude alongside solid stakeholder management skills.”</blockquote>
+        <figcaption><strong>Colin Rogers</strong><span>Head of Service Design</span><span class="rec-meta">Senior to Santosh · 2011</span></figcaption>
+      </figure>
+      <figure class="rec">
+        <blockquote>“Santosh is a methodical, diligent and organised individual, who works well with others, whether in technical or business roles, and always delivers on time to quality.”</blockquote>
+        <figcaption><strong>Nikki Greenway</strong><span>IT Director</span><span class="rec-meta">Managed Santosh directly · 2011</span></figcaption>
+      </figure>
+      </div>
+  </section>
+
   <section id="skills" class="panel" data-panel="skills" aria-labelledby="skills-h">
     <div class="sec-head">
       <h2 id="skills-h">Skills</h2>
@@ -1126,52 +1177,6 @@ footer{padding-block:0 40px;font-family:var(--mono);font-size:12.5px;color:var(-
         <p>I started my career in business analysis before moving into product management in 2013, progressing from Product Manager to Senior Product Manager and Head of Product, where I led a team of 5 product managers. I've led large-scale initiatives spanning web and mobile platforms, personalisation, customer engagement, internal tooling, workflow automation and operational transformation.</p>
         <p>That includes migrating 141 websites onto a new platform, launching curated news apps for The Scotsman and Yorkshire Post, and building personalised experiences across web and apps. More recently at Quantum, an award-winning affiliate marketing scale-up in iGaming, I've worked on internal platforms for merchant management, customer identity, commercial operations, workflow automation and digital asset management, using AI for rapid prototyping and building Claude skills to accelerate and improve product processes.</p>
         <p>I'm a Product Mentor at Intelligent People and volunteer with <a href="https://femaleproductlead.com/" target="_blank" rel="noopener">Female Product Lead</a>. I completed the AI Product Management Bootcamp on Maven, taught by product and AI leaders from Google, Meta and Anthropic, and won its Capstone Award for Fusion Fit, my AI prototype. I keep building my skills through hands-on projects in AI workflows, prototyping and evaluation.</p>
-      </div>
-    </div>
-    <div class="recs" id="recommendations">
-      <h2>Recommendations</h2>
-      <p class="pk-small">From LinkedIn, shortened in places.</p>
-      <h3 class="sub rec-h">Recent</h3>
-      <div class="rec-grid">
-      <figure class="rec">
-        <blockquote>“An excellent Snr. PM in every aspect. Santosh is proactive asking questions, seeking out information, understanding the business problem and then structuring a clear plan around options and/or paths to outcomes. She is analytical in her approach, extremely well organised as well as structured with her output and knows how to organise and manage delivery teams. She really does deliver and does it at a high standard so I recommend her highly and would hire her in a heartbeat if I could.”</blockquote>
-        <figcaption><strong>Nicola Barnett</strong><span>VP, Customer Data &amp; Orchestration</span><span class="rec-meta">Senior to Santosh · 2026</span></figcaption>
-      </figure>
-      <figure class="rec">
-        <blockquote>“Santosh was an exceptionally knowledgeable and collaborative colleague with whom I thoroughly enjoyed working. Her expertise was highly valuable throughout our time working together, and added huge value in a number of areas across product, tech, and marketing.”</blockquote>
-        <figcaption><strong>Luke Watkin</strong><span>VP, Growth</span><span class="rec-meta">Worked with Santosh on different teams · 2026</span></figcaption>
-      </figure>
-      <figure class="rec">
-        <blockquote>“Santosh was a pleasure to work with. She is very knowledgeable, hard working, collaborative, passionate and had great ideas that were brought to life.”</blockquote>
-        <figcaption><strong>Jade Power</strong><span>CRO, sustainable digital monetisation</span><span class="rec-meta">Worked with Santosh on different teams · 2025</span></figcaption>
-      </figure>
-      <figure class="rec">
-        <blockquote>“I worked with Santosh at Johnston Press for a number of years and found her to be excellent in her role as Product Owner. Working with an offshore development team brings its challenges but Santosh is diligent, hard working and a great team player. She is a joy to work with.”</blockquote>
-        <figcaption><strong>Gemma Edwards</strong><span>Senior Product Manager</span><span class="rec-meta">Same team at Johnston Press · 2017</span></figcaption>
-      </figure>
-      </div>
-      <h3 class="sub rec-h">Earlier in my career</h3>
-      <div class="rec-grid">
-      <figure class="rec">
-        <blockquote>“Santosh is results driven and understands business priorities over noise. She has the ability to challenge requirements intelligently without causing offence and bring people on the journey with her. This collaborative approach gets the best out of the teams she works in.”</blockquote>
-        <figcaption><strong>Brendan Drake</strong><span>VP, Professional Services &amp; Pre-Sales, International</span><span class="rec-meta">Same team · 2012</span></figcaption>
-      </figure>
-      <figure class="rec">
-        <blockquote>“Santosh was originally brought in to help fully operationalise one of the biggest new projects in European Directories. She is focused but also a capable all-rounder able to fill gaps when needed. I highly recommend her and feel she is one of the best hires I&#x27;ve had in a while!”</blockquote>
-        <figcaption><strong>James Blackstock</strong><span>Senior Delivery Director</span><span class="rec-meta">Managed Santosh directly · 2011</span></figcaption>
-      </figure>
-      <figure class="rec">
-        <blockquote>“Santosh is a highly skilled, talented and professional Business Analyst. She impressed so much that she was invited back to work with us after she graduated, where she not only quickly grew into her BA role to an extremely high level of professionalism but she managed to add considerable value to the Project Team.”</blockquote>
-        <figcaption><strong>David Caldwell</strong><span>Managing Editor</span><span class="rec-meta">Senior to Santosh · 2011</span></figcaption>
-      </figure>
-      <figure class="rec">
-        <blockquote>“Santosh proved to be an excellent Requirements Analyst providing both leadership and input into a business critical Business Requirements Document. She demonstrated a business focussed attitude alongside solid stakeholder management skills.”</blockquote>
-        <figcaption><strong>Colin Rogers</strong><span>Head of Service Design</span><span class="rec-meta">Senior to Santosh · 2011</span></figcaption>
-      </figure>
-      <figure class="rec">
-        <blockquote>“Santosh is a methodical, diligent and organised individual, who works well with others, whether in technical or business roles, and always delivers on time to quality.”</blockquote>
-        <figcaption><strong>Nikki Greenway</strong><span>IT Director</span><span class="rec-meta">Managed Santosh directly · 2011</span></figcaption>
-      </figure>
       </div>
     </div>
   </section>
