@@ -54,31 +54,38 @@ section.panel{padding-block:56px 0}
 .contact.panel{margin-block:56px 64px}
 
 /* hero */
-.hero{padding-block:72px 48px;display:grid;gap:28px}
-.hero .status{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:13px;color:var(--accent)}
-.hero .status::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent)}
-.hero h1{font-size:clamp(40px,7vw,76px);font-weight:700;letter-spacing:-.02em;max-width:16ch}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:64px;align-items:start;padding-block:48px 0}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr;gap:36px}}
+.hero{display:grid;gap:24px;min-width:0}
+.hero .status{display:inline-block;font-family:var(--mono);font-size:13px;line-height:1.5;color:var(--accent)}
+.hero .status::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-right:8px;vertical-align:1px}
+.hero h1{font-size:clamp(36px,4.2vw,56px);font-weight:700;letter-spacing:-.02em;line-height:1.05}
 .hero h1 em{font-style:normal;color:var(--accent)}
-.hero p.lede{font-size:20px;color:var(--muted);max-width:60ch;margin:0}
+.hero p.lede{font-size:18px;color:var(--muted);max-width:52ch;margin:0}
 .hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
 .btn{font-family:var(--display);font-weight:600;font-size:16px;padding:12px 20px;border-radius:999px;text-decoration:none;border:1.5px solid var(--accent);cursor:pointer}
 .btn.primary{background:var(--accent);color:var(--bg)}
 .btn.ghost{background:transparent;color:var(--accent)}
 
 /* key numbers */
-.numbers{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--ink);border-bottom:1px solid var(--line)}
-.numbers div{padding:20px 18px 22px 0;display:grid;gap:6px;align-content:start}
-.numbers div + div{padding-left:18px;border-left:1px solid var(--line)}
-.numbers strong{font-family:var(--display);font-size:clamp(30px,4vw,44px);font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1}
-.numbers span{font-size:15px;color:var(--muted);line-height:1.4}
-@media (max-width:760px){
-  .numbers{grid-template-columns:1fr 1fr}
-  .numbers div:nth-child(3){padding-left:0;border-left:0}
-  .numbers div:nth-child(n+3){border-top:1px solid var(--line)}
-}
+.hero-side{display:grid;gap:22px;min-width:0}
+.numbers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.numbers div{padding:20px 22px;display:grid;gap:6px;align-content:start;min-width:0}
+.numbers div:nth-child(odd){border-right:1px solid var(--line)}
+.numbers div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+.numbers strong{white-space:nowrap;font-family:var(--display);font-size:clamp(24px,2.3vw,32px);font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1}
+.numbers span{font-size:14px;color:var(--muted);line-height:1.4}
+.recog-line{margin:0;font-family:var(--display);font-size:15px;line-height:1.6;color:var(--muted)}
+.recog-line .label{margin-right:6px}
+.recog-line strong{color:var(--ink);font-weight:600}
+.linklike{background:none;border:0;padding:0;font:inherit;color:var(--accent);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.hero-quote{margin:0;padding:2px 0 2px 16px;border-left:3px solid var(--accent);display:grid;gap:6px}
+.hero-quote blockquote{margin:0;font-size:17px;line-height:1.45;font-style:italic}
+.hero-quote figcaption{font-family:var(--display);font-size:14px;color:var(--muted)}
 
 /* awards */
-.recog{padding-block:40px 0}
+.recog{padding-block:56px 0}
+.recog-h{scroll-margin-top:84px}
 .recog-h{font-size:clamp(24px,3vw,30px);margin-bottom:16px}
 .recog-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .recog-item{display:grid;gap:4px;align-content:start;padding:18px 20px;border:1px solid var(--line);border-radius:10px;background:var(--surface);min-width:0}
@@ -214,7 +221,7 @@ h3.sub{font-size:18px;font-weight:600;margin-bottom:6px}
 @media (max-width:860px){.mgrid{grid-template-columns:1fr 1fr}.mentor-intro{grid-template-columns:1fr;gap:20px}}
 @media (max-width:560px){.mgrid{grid-template-columns:1fr}}
 .hero-top{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
-.avatar{width:104px;height:104px;border-radius:50%;object-fit:cover;border:2px solid var(--line);flex:none}
+.avatar{width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid var(--line);flex:none}
 .avatar.lg{width:120px;height:120px}
 .contact-note{margin:0;color:var(--muted)}
 .routes{display:grid;grid-template-columns:1fr 1fr;gap:24px}
@@ -283,24 +290,52 @@ footer{padding-block:0 40px;font-family:var(--mono);font-size:12.5px;color:var(-
 
 <main class="wrap" id="top">
   <div class="panel" id="home" data-panel="home">
+  <div class="hero-grid">
   <header class="hero">
     <div class="hero-top">
-      <img class="avatar" src="shots/santosh.jpg" alt="Santosh Dhanjal" width="104" height="104">
-      <span class="status">Open to Lead, Senior and Product Manager roles · contract or permanent · London</span>
+      <img class="avatar" src="shots/santosh.jpg" alt="Santosh Dhanjal" width="64" height="64">
+      <span class="status">Open to Lead, Senior and Product Manager roles<br>Contract or permanent · London</span>
     </div>
     <h1>Senior Product Leader for <em>digital transformation, platforms and apps</em></h1>
-    <p class="lede">I have 10+ years' experience turning complex business problems into scalable digital products, from large-scale publishing platforms and mobile apps to internal tools and automation, using AI for rapid prototyping and building Claude skills to accelerate and improve product processes. I've worked across scale-ups and major UK media organisations, partnering with business and technical teams from discovery through to delivery.</p>
+    <p class="lede">10+ years turning complex business problems into scalable digital products, from publishing platforms and mobile apps to internal tools and AI prototyping.</p>
     <div class="ctas">
       <a class="btn primary" href="#work" data-tab="work">See case studies</a>
       <a class="btn ghost" href="https://www.linkedin.com/in/santosh-dhanjal" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="#recommendations" data-tab="recommendations">Recommendations</a>
     </div>
   </header>
 
-  <div class="numbers" aria-label="Key achievements">
-    <div><strong>14.4M</strong><span>monthly users for iNews within 3 months, launched from concept in 4 weeks</span></div>
-    <div><strong>141</strong><span>regional news sites replatformed in 6 months</span></div>
-    <div><strong>~3 min</strong><span>to put a merchant offer live, down from 35 minutes, after a legacy CMS migration</span></div>
-    <div><strong>3M+</strong><span>new push notification subscribers in 6 months</span></div>
+  <div class="hero-side">
+    <div class="numbers" aria-label="Key achievements">
+      <div><strong>14.4M</strong><span>monthly iNews users within 3 months</span></div>
+      <div><strong>141</strong><span>regional news sites replatformed in 6 months</span></div>
+      <div><strong>35 → 3 min</strong><span>to put a merchant offer live</span></div>
+      <div><strong>3M+</strong><span>new push subscribers in 6 months</span></div>
+    </div>
+    <p class="recog-line"><span class="label">Recognition</span> <strong>Capstone Award 2026</strong> · Product Development Team of the Year 2020 · <button type="button" class="linklike" data-scroll="recog-h">+4 more</button></p>
+    <figure class="hero-quote">
+      <blockquote>“An excellent Snr. PM in every aspect… I would hire her in a heartbeat.”</blockquote>
+      <figcaption><a href="https://www.linkedin.com/in/nibarnett/" target="_blank" rel="noopener">Nicola Barnett</a>, VP, Customer Data &amp; Orchestration · worked with Santosh at Quantum</figcaption>
+    </figure>
+  </div>
+  </div>
+
+  <div class="featured">
+    <div class="feat-head"><span class="label">Featured case studies</span><a href="#work" data-tab="work" class="more">All case studies →</a></div>
+    <div class="feat-grid">
+      <a class="feat" href="#work" data-tab="work" data-open="case-merchant">
+        <strong>Merchant management: legacy CMS to internal platform</strong>
+        <span class="feat-metric"><b>35 min → ~3 min</b> to put a merchant offer live</span>
+      </a>
+      <a class="feat" href="#work" data-tab="work" data-open="case-scotsman">
+        <strong>Curated news apps for The Scotsman and Yorkshire Post</strong>
+        <span class="feat-metric"><b>2.5★ → 4.3★</b> and <b>+18%</b> digital subscriptions</span>
+      </a>
+      <a class="feat" href="#work" data-tab="work" data-open="case-identity">
+        <strong>Customer identity and single customer view</strong>
+        <span class="feat-metric"><b>99.9%</b> identity match in a POC, recognising one customer across <b>30+</b> brands</span>
+      </a>
+    </div>
   </div>
 
   <section class="recog" aria-labelledby="recog-h">
@@ -316,32 +351,11 @@ footer{padding-block:0 40px;font-family:var(--mono);font-size:12.5px;color:var(-
   </section>
 
   <div class="featured">
-    <div class="feat-head"><span class="label">Featured case studies</span><a href="#work" data-tab="work" class="more">All case studies →</a></div>
-    <div class="feat-grid">
-      <a class="feat" href="#work" data-tab="work" data-open="case-merchant">
-        <span class="tag">Platforms</span>
-        <strong>Merchant management: legacy CMS to internal platform</strong>
-        <span class="feat-metric"><b>35 min → ~3 min</b> to put a merchant offer live</span>
-      </a>
-      <a class="feat" href="#work" data-tab="work" data-open="case-scotsman">
-        <span class="tag">Apps</span>
-        <strong>Curated news apps for The Scotsman and Yorkshire Post</strong>
-        <span class="feat-metric"><b>2.5★ → 4.3★</b> and <b>+18%</b> digital subscriptions</span>
-      </a>
-      <a class="feat" href="#work" data-tab="work" data-open="case-identity">
-        <span class="tag">Transformation</span>
-        <strong>Customer identity and single customer view</strong>
-        <span class="feat-metric"><b>99.9%</b> identity match in a POC, recognising one customer across <b>30+</b> brands</span>
-      </a>
-    </div>
-  </div>
-
-  <div class="featured">
     <div class="feat-head"><span class="label">What people say</span><a href="#recommendations" data-tab="recommendations" class="more">All recommendations →</a></div>
     <div class="rec-grid three">
       <figure class="rec">
-        <blockquote>“An excellent Snr. PM in every aspect. She really does deliver and does it at a high standard so I recommend her highly and would hire her in a heartbeat if I could.”</blockquote>
-        <figcaption><strong><a href="https://www.linkedin.com/in/nibarnett/" target="_blank" rel="noopener">Nicola Barnett</a></strong><span>VP, Customer Data &amp; Orchestration</span></figcaption>
+        <blockquote>“Santosh has picked up quickly and proven herself as a highly reliable set of hands… I highly recommend her and feel she is one of the best hires I've had in a while!”</blockquote>
+        <figcaption><strong>James Blackstock</strong><span>Senior Delivery Director</span></figcaption>
       </figure>
       <figure class="rec">
         <blockquote>“Santosh is results driven and understands business priorities over noise. She has the ability to challenge requirements intelligently without causing offence and bring people on the journey with her.”</blockquote>
@@ -1240,6 +1254,8 @@ footer{padding-block:0 40px;font-family:var(--mono);font-size:12.5px;color:var(-
     if(scroll) window.scrollTo(0,0);
   }
   document.addEventListener('click',function(e){
+    var sc=e.target.closest('[data-scroll]');
+    if(sc){var el=document.getElementById(sc.getAttribute('data-scroll')); if(el) el.scrollIntoView({behavior:'smooth',block:'start'}); return;}
     var a=e.target.closest('[data-tab]'); if(!a) return;
     e.preventDefault(); var id=a.getAttribute('data-tab');
     try{history.replaceState(null,'','#'+id)}catch(err){}
