@@ -78,6 +78,7 @@ section.panel{padding-block:56px 0}
 .numbers a:nth-child(-n+2){border-bottom:1px solid var(--line)}
 .numbers strong{white-space:nowrap;font-family:var(--display);font-size:clamp(24px,2.3vw,32px);font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1}
 .numbers span{font-size:14px;color:var(--muted);line-height:1.4}
+@media (max-width:520px){.numbers a{padding:18px 16px}.numbers strong{font-size:22px}}
 .recog-line{margin:0;font-family:var(--display);font-size:15px;line-height:1.6;color:var(--muted)}
 .recog-line .label{margin-right:6px}
 .recog-line strong{color:var(--ink);font-weight:600}
@@ -88,7 +89,7 @@ section.panel{padding-block:56px 0}
 
 /* awards */
 .recog{padding-block:56px 0}
-.recog-h,#role-jpi{scroll-margin-top:84px}
+.recog-h{scroll-margin-top:84px}
 .recog-h{font-size:clamp(24px,3vw,30px);margin-bottom:16px}
 .recog-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .recog-item{display:grid;gap:4px;align-content:start;padding:18px 20px;border:1px solid var(--line);border-radius:10px;background:var(--surface);min-width:0}
@@ -310,10 +311,10 @@ footer{padding-block:0 40px;font-family:var(--mono);font-size:12.5px;color:var(-
 
   <div class="hero-side">
     <div class="numbers" aria-label="Key achievements">
-      <a href="#experience" data-tab="experience" data-open="role-jpi"><strong>14.4M</strong><span>monthly iNews users within 3 months</span></a>
-      <a href="#experience" data-tab="experience" data-open="role-jpi"><strong>141</strong><span>regional news sites replatformed in 6 months</span></a>
       <a href="#work" data-tab="work" data-open="case-merchant"><strong>35 → 3 mins</strong><span>to put a merchant offer live</span></a>
-      <a href="#experience" data-tab="experience" data-open="role-jpi"><strong>3M+</strong><span>new push subscribers in 6 months</span></a>
+      <a href="#work" data-tab="work" data-open="case-scotsman"><strong>2.5★ → 4.3★</strong><span>App Store rating after relaunching a news app</span></a>
+      <a href="#work" data-tab="work" data-open="case-push"><strong>+50%</strong><span>push open rates across news sites</span></a>
+      <a href="#work" data-tab="work" data-open="case-affiliate"><strong>+40%</strong><span>affiliate revenue year on year</span></a>
     </div>
     <p class="recog-line"><span class="label">Recognition</span> <strong>Capstone Award winner 2026</strong> · <strong>Product Development Team of the Year winner 2020</strong> · <button type="button" class="linklike" data-scroll="recog-h">+4 more</button></p>
     <figure class="hero-quote">
@@ -670,7 +671,7 @@ footer{padding-block:0 40px;font-family:var(--mono);font-size:12.5px;color:var(-
         </div>
       </details>
 
-      <details class="case" data-tags="apps plat">
+      <details class="case" id="case-push" data-tags="apps plat">
         <summary>
           <div class="meta"><span class="tag">Apps</span><span class="tag st done">Live</span><span class="label">National World · OneSignal · Web, iOS &amp; Android</span></div>
           <h3>Push notifications platform</h3>
@@ -948,7 +949,7 @@ footer{padding-block:0 40px;font-family:var(--mono);font-size:12.5px;color:var(-
           </ul>
         </div>
       </li>
-      <li class="role" id="role-jpi">
+      <li class="role">
         <span class="when">Dec 2016 – Apr 2023</span>
         <div>
           <h3>Senior Product Manager</h3>
