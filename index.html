@@ -70,9 +70,12 @@ section.panel{padding-block:56px 0}
 /* key numbers */
 .hero-side{display:grid;gap:22px;min-width:0}
 .numbers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border:1px solid var(--line);border-radius:12px;background:var(--surface)}
-.numbers div{padding:20px 22px;display:grid;gap:6px;align-content:start;min-width:0}
-.numbers div:nth-child(odd){border-right:1px solid var(--line)}
-.numbers div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+.numbers a{padding:20px 22px;display:grid;gap:6px;align-content:start;min-width:0;color:var(--ink);text-decoration:none;transition:background .15s}
+.numbers a:hover,.numbers a:focus-visible{background:#1c1f28}
+.numbers a:hover strong{color:var(--accent)}
+.numbers a:nth-child(1){border-radius:12px 0 0 0}.numbers a:nth-child(2){border-radius:0 12px 0 0}.numbers a:nth-child(3){border-radius:0 0 0 12px}.numbers a:nth-child(4){border-radius:0 0 12px 0}
+.numbers a:nth-child(odd){border-right:1px solid var(--line)}
+.numbers a:nth-child(-n+2){border-bottom:1px solid var(--line)}
 .numbers strong{white-space:nowrap;font-family:var(--display);font-size:clamp(24px,2.3vw,32px);font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1}
 .numbers span{font-size:14px;color:var(--muted);line-height:1.4}
 .recog-line{margin:0;font-family:var(--display);font-size:15px;line-height:1.6;color:var(--muted)}
@@ -85,7 +88,7 @@ section.panel{padding-block:56px 0}
 
 /* awards */
 .recog{padding-block:56px 0}
-.recog-h{scroll-margin-top:84px}
+.recog-h,#role-jpi{scroll-margin-top:84px}
 .recog-h{font-size:clamp(24px,3vw,30px);margin-bottom:16px}
 .recog-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .recog-item{display:grid;gap:4px;align-content:start;padding:18px 20px;border:1px solid var(--line);border-radius:10px;background:var(--surface);min-width:0}
@@ -307,10 +310,10 @@ footer{padding-block:0 40px;font-family:var(--mono);font-size:12.5px;color:var(-
 
   <div class="hero-side">
     <div class="numbers" aria-label="Key achievements">
-      <div><strong>14.4M</strong><span>monthly iNews users within 3 months</span></div>
-      <div><strong>141</strong><span>regional news sites replatformed in 6 months</span></div>
-      <div><strong>35 → 3 mins</strong><span>to put a merchant offer live</span></div>
-      <div><strong>3M+</strong><span>new push subscribers in 6 months</span></div>
+      <a href="#experience" data-tab="experience" data-open="role-jpi"><strong>14.4M</strong><span>monthly iNews users within 3 months</span></a>
+      <a href="#experience" data-tab="experience" data-open="role-jpi"><strong>141</strong><span>regional news sites replatformed in 6 months</span></a>
+      <a href="#work" data-tab="work" data-open="case-merchant"><strong>35 → 3 mins</strong><span>to put a merchant offer live</span></a>
+      <a href="#experience" data-tab="experience" data-open="role-jpi"><strong>3M+</strong><span>new push subscribers in 6 months</span></a>
     </div>
     <p class="recog-line"><span class="label">Recognition</span> <strong>Capstone Award winner 2026</strong> · <strong>Product Development Team of the Year winner 2020</strong> · <button type="button" class="linklike" data-scroll="recog-h">+4 more</button></p>
     <figure class="hero-quote">
@@ -945,7 +948,7 @@ footer{padding-block:0 40px;font-family:var(--mono);font-size:12.5px;color:var(-
           </ul>
         </div>
       </li>
-      <li class="role">
+      <li class="role" id="role-jpi">
         <span class="when">Dec 2016 – Apr 2023</span>
         <div>
           <h3>Senior Product Manager</h3>
