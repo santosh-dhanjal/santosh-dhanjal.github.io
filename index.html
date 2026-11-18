@@ -78,10 +78,17 @@ section.panel{padding-block:56px 0}
 }
 
 /* awards */
-.awards{display:flex;flex-wrap:wrap;gap:8px 10px;padding-block:22px 0}
-.awards .label{width:100%}
-.award,.chip,.skills li{font-family:var(--display);font-size:14px;line-height:1.4;padding:6px 13px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink)}
-.award b{color:var(--accent);font-weight:600}
+.recog{padding-block:40px 0}
+.recog-h{font-size:clamp(24px,3vw,30px);margin-bottom:16px}
+.recog-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.recog-item{display:grid;gap:4px;align-content:start;padding:18px 20px;border:1px solid var(--line);border-radius:10px;background:var(--surface);min-width:0}
+.recog-item:first-child{border-color:var(--accent)}
+.recog-year{font-family:var(--mono);font-size:13px;color:var(--accent);letter-spacing:.04em}
+.recog-item strong{font-family:var(--display);font-size:18px;font-weight:600;line-height:1.3}
+.recog-org{font-family:var(--display);font-size:14px;color:var(--muted)}
+@media (max-width:860px){.recog-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.recog-grid{grid-template-columns:1fr}}
+.chip,.skills li{font-family:var(--display);font-size:14px;line-height:1.4;padding:6px 13px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink)}
 
 section{padding-block:72px 0}
 .sec-head{display:grid;gap:10px;margin-bottom:28px}
@@ -296,15 +303,17 @@ footer{padding-block:0 40px;font-family:var(--mono);font-size:12.5px;color:var(-
     <div><strong>3M+</strong><span>new push notification subscribers in 6 months</span></div>
   </div>
 
-  <div class="awards">
-    <span class="label">Recognition</span>
-    <span class="award"><b>Winner</b> · Capstone Award, AI Product Management Bootcamp 2026</span>
-    <span class="award"><b>Winner</b> · Product Development Team of the Year 2020</span>
-    <span class="award"><b>iNews</b> · National News Website of the Year 2020</span>
-    <span class="award"><b>iNews</b> · Gold, Media Brand of the Year 2019</span>
-    <span class="award"><b>iNews</b> · Silver, Digital Product of the Year 2019</span>
-    <span class="award"><b>iNews</b> · Best Designed Site 2019</span>
-  </div>
+  <section class="recog" aria-labelledby="recog-h">
+    <h2 id="recog-h" class="recog-h">Recognition</h2>
+    <ul class="recog-grid">
+      <li class="recog-item"><span class="recog-year">2026</span><strong>Capstone Award winner</strong><span class="recog-org">AI Product Management Bootcamp</span></li>
+      <li class="recog-item"><span class="recog-year">2020</span><strong>Product Development Team of the Year</strong><span class="recog-org">Winner</span></li>
+      <li class="recog-item"><span class="recog-year">2020</span><strong>National News Website of the Year</strong><span class="recog-org">iNews</span></li>
+      <li class="recog-item"><span class="recog-year">2019</span><strong>Gold, Media Brand of the Year</strong><span class="recog-org">iNews</span></li>
+      <li class="recog-item"><span class="recog-year">2019</span><strong>Silver, Digital Product of the Year</strong><span class="recog-org">iNews</span></li>
+      <li class="recog-item"><span class="recog-year">2019</span><strong>Best Designed Site</strong><span class="recog-org">iNews</span></li>
+    </ul>
+  </section>
 
   <div class="featured">
     <div class="feat-head"><span class="label">Featured case studies</span><a href="#work" data-tab="work" class="more">All case studies →</a></div>
